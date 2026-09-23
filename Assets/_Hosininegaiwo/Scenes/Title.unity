@@ -715,8 +715,8 @@ MonoBehaviour:
         settings:
           startValue: {x: 1, y: 1, z: 1}
           endValue: {x: 1.1, y: 1.1, z: 1.1}
-          duration: 0.15
-          ease: 26
+          duration: 1
+          ease: 2
           customEaseCurve:
             serializedVersion: 2
             m_Curve:
@@ -749,7 +749,7 @@ MonoBehaviour:
           skipValuesDuringDelay: 0
           immediateBind: 0
           schedulerType: 0
-          additionalSettings: 0
+          additionalSettings: 1
         relative: 0
 --- !u!1 &930467339
 GameObject:
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgm: {fileID: 8300000, guid: 7b8d6a202d32a684e8f3f99f98c5e111, type: 3}
-  nextSceneName: a
+  nextSceneName: Game
 --- !u!4 &930467341
 Transform:
   m_ObjectHideFlags: 0
