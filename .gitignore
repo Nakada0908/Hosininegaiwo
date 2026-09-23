@@ -104,3 +104,25 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+#ignore追加
+
+/[Aa]ssets/TextMesh Pro/
+/[Aa]ssets/TextMesh Pro.meta
+
+#DoTweenPro
+/[Aa]ssets/Plugins/
+/[Aa]ssets/Plugins.meta
+#Naninovel
+/Assets/NaninovelData/Transient*
+/Assets/NaninovelData/.nani/Transient*
+
+#Addressables
+/ServerData
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+
+#外部素材
+/[Aa]ssets/Sozai/
+/[Aa]ssets/Sozai.meta
