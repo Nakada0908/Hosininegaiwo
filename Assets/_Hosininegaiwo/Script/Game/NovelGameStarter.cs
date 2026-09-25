@@ -1,71 +1,33 @@
+using System;
 using Naninovel;
 using UnityEngine;
 
+/// <summary>
+/// Unity の Game シーンに入ったとき、指定されたシナリオを再生する。
+/// </summary>
 public class NovelGameStarter : MonoBehaviour
 {
-    [SerializeField] private string scriptPath = "Entry";
-    [SerializeField] private string endingSceneName = "Ending";
-
-    private IScriptPlayer scriptPlayer;
-    private bool isTransitioning;
+    [SerializeField, ScriptAssetRef] private string startScript;
 
     private async void Start()
     {
-        //Naninovelの初期化を待つ
-        await RuntimeInitializer.Initialize();
-
-        scriptPlayer = Engine.GetServiceOrErr<IScriptPlayer>();
-
-        //前回の立ち絵や背景などを消して、新しいらしいゲーム状態にする
-        IStateManager stateManager=Engine.GetServiceOrErr<IStateManager>();
-        await stateManager.ResetState();
-
-        if (this == null || !isActiveAndEnabled)
+        try
         {
-            return;
+            // 自動初期化が有効でも、完了するまでは Naninovel の機能を使わない。
+            await RuntimeInitializer.Initialize();
+            if (!this || !isActiveAndEnabled) return;
+
+            // 新規開始なので、前回の背景・立ち絵・再生位置などを初期状態へ戻す。
+            var stateManager = Engine.GetServiceOrErr<IStateManager>();
+            await stateManager.ResetState();
+            if (!this || !isActiveAndEnabled) return;
+
+            var scriptPath = ScriptAssets.GetPathOrErr(startScript);
+            await Engine.GetServiceOrErr<IScriptPlayer>().MainTrack.LoadAndPlay(scriptPath);
         }
-
-        //シナリオ終了を受け取る
-        scriptPlayer.OnStop += OnScriptStopped;
-
-        //Assets/Scenario/Entry.naniを再生
-        await scriptPlayer.MainTrack.LoadAndPlay(scriptPath);
-    }
-
-    private void OnScriptStopped(IScriptTrack track)
-    {
-        if(isTransitioning)
+        catch (Exception exception)
         {
-            return;
-        }
-
-        if(scriptPlayer==null||track!=scriptPlayer.MainTrack)
-        {
-            return;
-        }
-
-        if(track.PlayedScript==null||
-            track.PlayedScript.Path!=scriptPath)
-        {
-            return;
-        }
-
-        //@choiceも入力待ちに入るとOnStopを発火する
-        //最後のコマンドを実行し終えた場合だけエンディングに進む
-        if (track.Playlist == null || track.PlayedIndex != track.Playlist.Count - 1)
-        {
-            return;
-        }
-
-        isTransitioning = true;
-        MySceneManager.Instance.ChangeScene(endingSceneName);
-    }
-
-    private void OnDestroy()
-    {
-        if(scriptPlayer!=null)
-        {
-            scriptPlayer.OnStop -= OnScriptStopped;
+            Debug.LogException(exception);
         }
     }
 }

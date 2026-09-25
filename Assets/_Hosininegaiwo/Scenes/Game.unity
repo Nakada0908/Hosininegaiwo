@@ -148,8 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c841f5240d805c645acc79f0bc35ad2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NovelGameStarter
-  scriptPath: Entry
-  endingSceneName: Ending
+  startScript: c2c93095f533424b9bf3ca49452c222a
 --- !u!4 &636483498
 Transform:
   m_ObjectHideFlags: 0
