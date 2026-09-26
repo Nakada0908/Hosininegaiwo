@@ -42,6 +42,12 @@ public class ButtonSEBinder : MonoBehaviour
 
     private void PlayClickSE()
     {
+        if(clickSE == null)
+        {
+            Debug.LogWarning("ボタンのクリック音がないよ");
+            return;
+        }
+
         SoundManager.Instance.PlaySE(clickSE);
     }
 }

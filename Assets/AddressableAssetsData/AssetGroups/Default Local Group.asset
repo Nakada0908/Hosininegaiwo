@@ -14,12 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Default Local Group
   m_GUID: eae0c7b1e955ef540b39c9b5f005f87d
-  m_SerializeEntries:
-  - m_GUID: 57b9895558e5aed4e9466c1cf305c51c
-    m_Address: Assets/_Kanagata/Object/test.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 52fc036309d1f60478af451ef9153f1c, type: 2}
   m_SchemaSet:

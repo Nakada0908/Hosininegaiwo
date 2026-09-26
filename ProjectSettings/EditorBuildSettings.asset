@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/_Hosininegaiwo/Scenes/Novel.unity
     guid: 7b703e00e0acb63418b3b77a8cad1468
   - enabled: 1
+    path: Assets/_Hosininegaiwo/Scenes/Game.unity
+    guid: 508ccd4b3ef13f447b247e7678ad6192
+  - enabled: 1
     path: Assets/_Hosininegaiwo/Scenes/Ending.unity
     guid: a147557f89135e1468cc144c34ac8f6e
   m_configObjects:
