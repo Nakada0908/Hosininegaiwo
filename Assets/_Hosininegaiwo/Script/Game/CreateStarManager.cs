@@ -2,17 +2,22 @@ using UnityEngine;
 
 public class CreateStarManager : MonoBehaviour
 {
-    public bool isSecondRound = false;
+    [HideInInspector] public bool isSecondRound = false;
 
     [SerializeField] private GameObject firstStarPrefab;
     [SerializeField] private GameObject secondStarPrefab;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private float spawnInterval = 1f;
 
+    private bool isSceneChenge;
+
     private void Start()
     {
+        isSceneChenge = false;
+
         //‰‰ñ‚Ì¯¶¬
         CreateStar();
+        //ˆê’èŠÔŠu‚Å¯‚ð¶¬‚·‚é
         InvokeRepeating(nameof(CreateStar), spawnInterval, spawnInterval);
     }
 
@@ -22,7 +27,11 @@ public class CreateStarManager : MonoBehaviour
         if (ScoreManeger.Instance.score >= 10)
         {
             CancelInvoke(nameof(CreateStar));
-            MySceneManager.Instance.ChangeScene("Novel");
+            if (!isSceneChenge)
+            {
+                isSceneChenge = true;
+                MySceneManager.Instance.ChangeScene("Novel");
+            }
         }
     }
 

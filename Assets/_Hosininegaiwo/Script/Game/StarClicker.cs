@@ -15,10 +15,14 @@ public class StarClicker : MonoBehaviour
         Vector2 world = gameCamera.ScreenToWorldPoint(
             new Vector3(mouse.x, mouse.y, 0f));
 
+        //マウスの位置にコライダーがあるか判定
         Physics2D.SyncTransforms();
         Collider2D hit = Physics2D.OverlapPoint(world);
 
+        //コライダーがあれば、親のStarMoveスクリプトを取得してHit()を呼び出す
         if (hit != null)
+        { 
             hit.GetComponentInParent<StarMove>()?.Hit();
+        }
     }
 }

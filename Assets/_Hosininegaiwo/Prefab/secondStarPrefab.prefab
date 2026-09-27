@@ -242,5 +242,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StarMove
   direction: {x: -1, y: -0.5}
-  starSpeed: 3
+  starSpeed: 5
   hitMaxCount: 3
