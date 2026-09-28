@@ -25,6 +25,24 @@
             "group": ""
         },
         {
+            "guid": "939499e392a89f945b4d4ac868ec2e89",
+            "prefix": "Scripts",
+            "path": "Final",
+            "group": ""
+        },
+        {
+            "guid": "9b141030f46790e4a881942e77136358",
+            "prefix": "Scripts",
+            "path": "First",
+            "group": ""
+        },
+        {
+            "guid": "2e4aa66a3f31b574b94bc88799964314",
+            "prefix": "Scripts",
+            "path": "Second",
+            "group": ""
+        },
+        {
             "guid": "b3cdbe24fe15449d9a8f9d200bb7a460",
             "prefix": "Scripts",
             "path": "Title",

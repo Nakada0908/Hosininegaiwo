@@ -8,6 +8,7 @@ using UnityEngine;
 public class NovelGameStarter : MonoBehaviour
 {
     [SerializeField, ScriptAssetRef] private string startScript;
+    public static string nextScript;
 
     private async void Start()
     {
@@ -22,8 +23,11 @@ public class NovelGameStarter : MonoBehaviour
             await stateManager.ResetState();
             if (!this || !isActiveAndEnabled) return;
 
-            var scriptPath = ScriptAssets.GetPathOrErr(startScript);
-            await Engine.GetServiceOrErr<IScriptPlayer>().MainTrack.LoadAndPlay(scriptPath);
+            //指定されたシナリオを再生する。
+            string selectedScript = string.IsNullOrEmpty(nextScript)
+                ? startScript
+                : nextScript;
+            await Engine.GetServiceOrErr<IScriptPlayer>().MainTrack.LoadAndPlay(selectedScript);
         }
         catch (Exception exception)
         {

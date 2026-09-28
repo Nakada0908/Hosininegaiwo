@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgm: {fileID: 8300000, guid: 7b8d6a202d32a684e8f3f99f98c5e111, type: 3}
-  nextSceneName: Game
+  nextSceneName: Novel
 --- !u!4 &930467341
 Transform:
   m_ObjectHideFlags: 0

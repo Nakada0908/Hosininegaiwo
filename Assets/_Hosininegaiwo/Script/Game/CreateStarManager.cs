@@ -1,13 +1,15 @@
 using UnityEngine;
+using Naninovel;
 
 public class CreateStarManager : MonoBehaviour
 {
-    [HideInInspector] public bool isSecondRound = false;
-
     [SerializeField] private GameObject firstStarPrefab;
     [SerializeField] private GameObject secondStarPrefab;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private float spawnInterval = 1f;
+
+    [SerializeField, ScriptAssetRef] private string secondStory;
+    [SerializeField, ScriptAssetRef] private string finalStory;
 
     private bool isSceneChenge;
 
@@ -27,10 +29,16 @@ public class CreateStarManager : MonoBehaviour
         if (ScoreManeger.Instance.score >= 10)
         {
             CancelInvoke(nameof(CreateStar));
+
+            //周回数に応じて,naniの指定
             if (!isSceneChenge)
             {
                 isSceneChenge = true;
+                //.nani指定を変えてからシーンを変える
+                NovelGameStarter.nextScript = GameRoundCounter.isSecondRound ? finalStory : secondStory;
                 MySceneManager.Instance.ChangeScene("Novel");
+                //2週目は無意味な変更
+                GameRoundCounter.StartSecondGame();
             }
         }
     }
@@ -38,7 +46,7 @@ public class CreateStarManager : MonoBehaviour
     private void CreateStar()
     {
         //生成する星のプレハブを選択
-        GameObject starPrefab = isSecondRound ? secondStarPrefab : firstStarPrefab;
+        GameObject starPrefab = GameRoundCounter.isSecondRound ? secondStarPrefab : firstStarPrefab;
 
         //生成位置をランダムに決定
         float x = Random.Range(0.7f, 1.1f);

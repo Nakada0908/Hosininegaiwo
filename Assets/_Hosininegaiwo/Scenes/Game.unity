@@ -284,11 +284,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f20416533a688b4cbf6432a0087b783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreateStar
-  isSecondRound: 0
   firstStarPrefab: {fileID: 5627402743625057780, guid: 0d583925323d652478974ca1bf5b93bb, type: 3}
   secondStarPrefab: {fileID: 5627402743625057780, guid: 6055bb5dca718c742af7f8935da453ed, type: 3}
   mainCamera: {fileID: 2083838159}
   spawnInterval: 1
+  secondStory: 2e4aa66a3f31b574b94bc88799964314
+  finalStory: 939499e392a89f945b4d4ac868ec2e89
 --- !u!4 &1263379095
 Transform:
   m_ObjectHideFlags: 0
