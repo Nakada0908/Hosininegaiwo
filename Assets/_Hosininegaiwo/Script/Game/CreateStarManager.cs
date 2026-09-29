@@ -37,8 +37,6 @@ public class CreateStarManager : MonoBehaviour
                 //.nani指定を変えてからシーンを変える
                 NovelGameStarter.nextScript = GameRoundCounter.isSecondRound ? finalStory : secondStory;
                 MySceneManager.Instance.ChangeScene("Novel");
-                //2週目は無意味な変更
-                GameRoundCounter.StartSecondGame();
             }
         }
     }

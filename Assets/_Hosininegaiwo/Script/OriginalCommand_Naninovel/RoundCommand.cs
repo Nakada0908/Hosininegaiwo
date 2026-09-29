@@ -12,3 +12,14 @@ public class RoundCommand : Command
         return Async.Completed;
     }
 }
+
+[Serializable, Alias("secondRound")]
+public class SecondRoundCommand : Command
+{
+    public override Awaitable Execute(ExecutionContext ctx)
+    {
+        GameRoundCounter.StartSecondGame();
+        MySceneManager.Instance.ChangeScene("Game");
+        return Async.Completed;
+    }
+}
