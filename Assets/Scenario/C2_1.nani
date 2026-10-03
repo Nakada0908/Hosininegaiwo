@@ -1,3 +1,5 @@
+@back id:Star
+
 Player: 綺麗だったね〜
 Friend: うん、すごく良かったぁ
 Player: {getName("Friend")}は何を願ったの？
@@ -30,3 +32,5 @@ Player: え……？
 私は戻っていた。あの場所に。
 隣を見れば{getName("Friend")}が居た。
 先程までのことが嘘だったかのように。
+
+@goto C2_2
