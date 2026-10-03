@@ -1,6 +1,30 @@
 {
     "Assets": [
         {
+            "guid": "f54e7e0e5e37cd24fa5b2b60760dbdb9",
+            "prefix": "Backgrounds/School",
+            "path": "教室の前のドア（日中・開）",
+            "group": "Backgrounds/259fb2ce-73af-4e7b-98f7-5d885ef12cbc"
+        },
+        {
+            "guid": "1903fb2cdb2db754dbe443f789b7f0bb",
+            "prefix": "Backgrounds/Star",
+            "path": "宇宙",
+            "group": "Backgrounds/ea017ab2-593a-49f2-9a8c-239da8504236"
+        },
+        {
+            "guid": "cfe38f5d6d52ac746981d196a73f5ea9",
+            "prefix": "Characters/Friend",
+            "path": "Default",
+            "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
+        },
+        {
+            "guid": "b965caee0fe976249948c4cd9f9aee2a",
+            "prefix": "Characters/Player",
+            "path": "Default",
+            "group": "Characters/8c322188-5edd-4422-9658-51ba240fdcec"
+        },
+        {
             "guid": "4fa6d62f894ae6e4698bfa8af59e7942",
             "prefix": "ChoiceHandlers",
             "path": "ButtonArea",
@@ -34,6 +58,12 @@
             "guid": "9b141030f46790e4a881942e77136358",
             "prefix": "Scripts",
             "path": "First",
+            "group": ""
+        },
+        {
+            "guid": "68ffd1a345000a14bbf72e7f9d2e68a1",
+            "prefix": "Scripts",
+            "path": "First_Hosi",
             "group": ""
         },
         {
@@ -127,7 +157,7 @@
             "group": "TextPrinters/be138625-299f-4d99-ba71-47bf376d40a8"
         },
         {
-            "guid": "1bc08ccd31adff6439e97161aa6e1d8b",
+            "guid": "ab217e5289ac0d9479b6d51776ab4cda",
             "prefix": "TextPrinters",
             "path": "Dialogue",
             "group": "TextPrinters/f5872284-991c-416f-841e-cdd6074d0f2e"

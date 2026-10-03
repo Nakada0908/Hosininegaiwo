@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3be34281d83bad429e22787cd3c8069, type: 3}
   m_Name: CharactersConfiguration
   m_EditorClassIdentifier: Elringus.Naninovel.Runtime::Naninovel.CharactersConfiguration
-  DefaultDuration: 0.35
+  DefaultDuration: 0
   DefaultEasing: 1
-  AutoShowOnModify: 1
+  AutoShowOnModify: 0
   SceneOrigin: {x: 0.5, y: 0}
   ZOffset: 50
   ZStep: 0.1
-  AutoArrangeOnAdd: 1
+  AutoArrangeOnAdd: 0
   ArrangeRange: {x: 0, y: 1}
   DefaultMetadata:
     Implementation: Naninovel.PlaceholderCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
@@ -32,7 +32,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
     guid: 0ed016c4-1861-4948-b7d9-ac4703f72749
     customData:
-      rid: -2
+      rid: 5385533332787298321
     Pivot: {x: 0.5, y: 0}
     PixelsPerUnit: 100
     FilterMode: 2
@@ -67,8 +67,100 @@ MonoBehaviour:
     Poses: []
     Anchors: []
   Metadata:
-    ids: []
-    metas: []
+    ids:
+    - Player
+    - Friend
+    metas:
+    - Implementation: Naninovel.SpriteCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Characters
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 8c322188-5edd-4422-9658-51ba240fdcec
+      customData:
+        rid: 5385533332787298306
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 75
+      FilterMode: 2
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureMaterial: {fileID: 0}
+      CustomSpriteMaterial: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      BakedLookDirection: 1
+      HasName: 1
+      DisplayName: Player
+      UseCharacterColor: 0
+      NameColor: {r: 1, g: 1, b: 1, a: 1}
+      MessageColor: {r: 1, g: 1, b: 1, a: 1}
+      HighlightWhenSpeaking: 0
+      HighlightCharacterCount: 0
+      SpeakingPose: 
+      NotSpeakingPose: 
+      PlaceOnTop: 1
+      HighlightDuration: 0.35
+      HighlightEasing: 1
+      MessageSound: 
+      MessageSoundPlayback: 0
+      VoiceSource: {fileID: 0}
+      LinkedPrinter: 
+      Poses: []
+      Anchors: []
+    - Implementation: Naninovel.SpriteCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Characters
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 810811a6-b8cc-471e-933a-5e6a6a7a83cd
+      customData:
+        rid: 5385533332787298309
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      FilterMode: 2
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureMaterial: {fileID: 0}
+      CustomSpriteMaterial: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      BakedLookDirection: 1
+      HasName: 1
+      DisplayName: Friend
+      UseCharacterColor: 0
+      NameColor: {r: 1, g: 1, b: 1, a: 1}
+      MessageColor: {r: 1, g: 1, b: 1, a: 1}
+      HighlightWhenSpeaking: 0
+      HighlightCharacterCount: 0
+      SpeakingPose: 
+      NotSpeakingPose: 
+      PlaceOnTop: 1
+      HighlightDuration: 0.35
+      HighlightEasing: 1
+      MessageSound: 
+      MessageSoundPlayback: 0
+      VoiceSource: {fileID: 0}
+      LinkedPrinter: 
+      Poses: []
+      Anchors: []
   AvatarLoader:
     PathPrefix: CharacterAvatars
     ProviderTypes:
@@ -80,5 +172,72 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    - rid: 5385533332787298306
+      type: {class: PlaceholderCharacterMetadata, ns: Naninovel, asm: Elringus.Naninovel.Runtime}
+      data:
+        PlaceholderAppearances:
+        - Neutral
+        - Happy
+        - Sad
+        - Angry
+        - Surprised
+        - Confused
+        - Excited
+        - Shy
+        - Embarrassed
+        - Thinking
+        - Serious
+        - Sleepy
+        - Tired
+        - Worried
+        - Scared
+        - Laughing
+        - Crying
+        - Blushing
+        - Determined
+    - rid: 5385533332787298309
+      type: {class: PlaceholderCharacterMetadata, ns: Naninovel, asm: Elringus.Naninovel.Runtime}
+      data:
+        PlaceholderAppearances:
+        - Neutral
+        - Happy
+        - Sad
+        - Angry
+        - Surprised
+        - Confused
+        - Excited
+        - Shy
+        - Embarrassed
+        - Thinking
+        - Serious
+        - Sleepy
+        - Tired
+        - Worried
+        - Scared
+        - Laughing
+        - Crying
+        - Blushing
+        - Determined
+    - rid: 5385533332787298321
+      type: {class: PlaceholderCharacterMetadata, ns: Naninovel, asm: Elringus.Naninovel.Runtime}
+      data:
+        PlaceholderAppearances:
+        - Neutral
+        - Happy
+        - Sad
+        - Angry
+        - Surprised
+        - Confused
+        - Excited
+        - Shy
+        - Embarrassed
+        - Thinking
+        - Serious
+        - Sleepy
+        - Tired
+        - Worried
+        - Scared
+        - Laughing
+        - Crying
+        - Blushing
+        - Determined
