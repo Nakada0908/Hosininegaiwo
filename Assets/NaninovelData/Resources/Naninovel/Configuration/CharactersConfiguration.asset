@@ -153,8 +153,8 @@ MonoBehaviour:
       SpeakingPose: 
       NotSpeakingPose: 
       PlaceOnTop: 1
-      HighlightDuration: 0.35
-      HighlightEasing: 1
+      HighlightDuration: 1
+      HighlightEasing: 15
       MessageSound: 
       MessageSoundPlayback: 0
       VoiceSource: {fileID: 0}

@@ -32,4 +32,6 @@ Player: はいはい
 Player: なんだかなぁ
 ; 小さい声で微笑む
 
+@hideChars wait! time:0.3
+
 @goto C1_2
