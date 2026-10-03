@@ -43,6 +43,36 @@
             "group": "ChoiceHandlers/f22d19ec-2a8d-449d-89f8-24db2b711930"
         },
         {
+            "guid": "9b141030f46790e4a881942e77136358",
+            "prefix": "Scripts",
+            "path": "C1_1",
+            "group": ""
+        },
+        {
+            "guid": "68ffd1a345000a14bbf72e7f9d2e68a1",
+            "prefix": "Scripts",
+            "path": "C1_2",
+            "group": ""
+        },
+        {
+            "guid": "2e4aa66a3f31b574b94bc88799964314",
+            "prefix": "Scripts",
+            "path": "C2_1",
+            "group": ""
+        },
+        {
+            "guid": "9b5e1e959ef70694bb3ee493d1a32614",
+            "prefix": "Scripts",
+            "path": "C2_2",
+            "group": ""
+        },
+        {
+            "guid": "939499e392a89f945b4d4ac868ec2e89",
+            "prefix": "Scripts",
+            "path": "C2_3",
+            "group": ""
+        },
+        {
             "guid": "c2c93095f533424b9bf3ca49452c222a",
             "prefix": "Scripts",
             "path": "Entry",
@@ -70,6 +100,18 @@
             "guid": "2e4aa66a3f31b574b94bc88799964314",
             "prefix": "Scripts",
             "path": "Second",
+            "group": ""
+        },
+        {
+            "guid": "c2c93095f533424b9bf3ca49452c222a",
+            "prefix": "Scripts",
+            "path": "test",
+            "group": ""
+        },
+        {
+            "guid": "b3cdbe24fe15449d9a8f9d200bb7a460",
+            "prefix": "Scripts",
+            "path": "test2",
             "group": ""
         },
         {
