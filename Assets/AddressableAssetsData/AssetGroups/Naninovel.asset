@@ -46,7 +46,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2e4aa66a3f31b574b94bc88799964314
-    m_Address: Naninovel/Scripts/C1_3, Naninovel/Scripts/C2_1, Naninovel/Scripts/Second
+    m_Address: Naninovel/Scripts/C1_3, Naninovel/Scripts/Second
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9b5e1e959ef70694bb3ee493d1a32614
-    m_Address: Naninovel/Scripts/C2_2, Naninovel/Scripts/C2_3, Naninovel/Scripts/Final
+    m_Address: Naninovel/Scripts/C2_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
