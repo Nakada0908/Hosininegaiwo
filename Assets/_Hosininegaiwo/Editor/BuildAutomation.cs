@@ -85,7 +85,18 @@ public class BuildAutomation
         buildPlayerOptions.options = options;
 
         //ビルドを実行する
-        BuildPipeline.BuildPlayer(buildPlayerOptions);
+        //Naninovelの前処理と後処理を含めてビルドする。
+        try
+        {
+            //Naninovelの型キャッシュとリソースをビルド用に準備する。
+            Naninovel.BuildProcessor.PreprocessBuild(buildPlayerOptions);
+            BuildPipeline.BuildPlayer(buildPlayerOptions);
+        }
+        finally
+        {
+            //ビルドに失敗した場合も一時リソースを片付ける。
+            Naninovel.BuildProcessor.PostprocessBuild();
+        }
         Debug.Log("ビルドが完了しました: " + buildPath);
     }
 }
