@@ -28,12 +28,13 @@ public class CreateStarManager : MonoBehaviour
         //スコアが10に達したら星の生成を停止
         if (ScoreManeger.Instance.score >= 10)
         {
-            CancelInvoke(nameof(CreateStar));
-
             //周回数に応じて,naniの指定
             if (!isSceneChenge)
             {
                 isSceneChenge = true;
+
+                CancelInvoke(nameof(CreateStar));
+
                 //.nani指定を変えてからシーンを変える
                 NovelGameStarter.nextScript = GameRoundCounter.isSecondRound ? finalStory : secondStory;
                 MySceneManager.Instance.ChangeScene("Novel");
