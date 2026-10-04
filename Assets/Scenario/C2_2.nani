@@ -1,4 +1,13 @@
-Player: え……いったい何が……
+@char Player.Default pos:50 visible!
+Player: いったい何が……
+
+@char Player pos:75
+@char Friend pos:25 visible!
+地面にはレジャーシート、空を見れば満天の星。\\n隣にはやはり、{getname("Friend")}がいる。
+
+Player: （どういうこと？さっきまでのは夢？）
+
+しかし夢というにはあまりに現実的過ぎて……
 
 @hideAll wait!
 @secondRound

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CharactersConfiguration
   m_EditorClassIdentifier: Elringus.Naninovel.Runtime::Naninovel.CharactersConfiguration
   DefaultDuration: 0
-  DefaultEasing: 1
+  DefaultEasing: 4
   AutoShowOnModify: 0
   SceneOrigin: {x: 0.5, y: 0}
   ZOffset: 50
