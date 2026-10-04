@@ -9,7 +9,7 @@ Player: （どういうこと？さっきまでのは夢？）
 
 しかし夢というにはあまりに現実的過ぎて……
 でもそんなことより……
-@char Player pos:50
+@char Player pos:50 easing:EaseOutQuad time:0.3
 {getname("Friend")}が生きていたことに涙を流しながら抱き着く。
 
 Player: 生きてる……生きててよかったぁ……！
@@ -17,7 +17,7 @@ Friend: うへぇ！？急にどうしたん！？
 
 もしかしたら自分が見たのは、悪い夢だったのかもしれない。
 
-@char Player pos:75
+@char Player pos:75 easing:EaseInQuad time:0.3
 Player: ちょっと悪い夢を見ちゃって……
 Friend: 大丈夫？体調とかやばかったら帰るけど……
 
