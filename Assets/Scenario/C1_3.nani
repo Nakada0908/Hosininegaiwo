@@ -1,4 +1,12 @@
-@back id:Star
+; 演出中の誤タップを無効にする
+@processInput false
+@wait 0.5
+
+; 背景とキャラをゆっくり表示し、完了を待つ
+@back id:Star visible! time:0.7 wait!
+@char Player.Default visible! pos:75 wait!
+
+@processInput true
 
 @char Player.Default visible! pos:75
 Player: 綺麗だったね〜
