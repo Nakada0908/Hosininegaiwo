@@ -1,57 +1,39 @@
-@back id:Star
-
-@char Player.Default visible! pos:75
-Player: 綺麗だったね〜
-@char Friend.Default visible! pos:25
-Friend: うん、すごく良かったぁ
-Player: {getName("Friend")}は何を願ったの？
-Friend: 私？私はねぇ……秘密かな！
-Player: え〜それくらいいいじゃん〜
-
-二人で笑い合う。
-
-Friend: 願いは秘めておく方がいいっていうじゃん♪
-Friend: あ、それでいうと流れ星に3回願い事をすると、願いが叶うってあるじゃん？
-Player: よく聞くヤツね
-Friend: それって突然流れてくる流れ星に、即座に3回願えるほど強く、 \\n強く願ってる人はきっと自身の力でも叶えうる……\\nって話らしいよ？
-Player: 言語化されると……夢がないなぁ
-Friend: ね〜でもこういう話も面白くない？
-Player: それは……確かに
-Player: っていうか流星群だと来るのがわかってて願ってるから……だめじゃない？
-Friend: あ、たしかに〜
-; (˶ᐢᗜᐢ˶)//たはは〜って感じ<br>
-
-たわいない話をしながら、帰りの電車に向かう。
-
-Player: ここの信号渡った先が駅だね
-Friend: うん！地図的にもそのはず！
-
-@hideChars
-そう話しながら横断歩道を渡る。
-@char Friend.Default pos:50 visible!
-少し走るように前を行く{getname("Friend")}が振り返る。
-追いつこうと歩みを速めた足は、
-瞬間目に入ってきた光に\\n思わず足を止めた。
-
-Player: （危な……）
-
-; ここに光る演出入れたいね
-声に出すより先に、異常な速度でトラックが突っ込んでくる。
-@char Friend.Default pos:150 easing:EaseOutQuad wait! time:0.1
-それは{getname("Friend")}を容赦なく弾き飛ばす。
-少しも動かなくなった{getname("Friend")}の体を\\nただ見ているしかできない。
-あらぬ方向に曲がった足、腕、\\nそして……首。
-誰がどう見ても即死である。
-受け入れがたい事態に足がふらつき、俯く。
-それでも早く救急車を呼べば助かるかもしれないと、\\n急いでスマホを取り出そうとする。
-
-; 時が戻る
 @char Player.Default pos:50 visible!
-Player: ……えっ？
+Player: いったい何が……
 
-@hideChars
-私は戻っていた。あの場所に。
-隣を見れば{getName("Friend")}が居た。
-先程までのことが嘘だったかのように。
+@char Player pos:75
+@char Friend pos:25 visible!
+地面にはレジャーシート、空を見れば満天の星。\\n隣にはやはり、{getname("Friend")}がいる。
 
-@goto C2_2
+Player: （どういうこと？さっきまでのは夢？）
+
+しかし夢というにはあまりに現実的過ぎて……
+でもそんなことより……
+@char Player pos:50
+{getname("Friend")}が生きていたことに涙を流しながら抱き着く。
+
+Player: 生きてる……生きててよかったぁ……！
+Friend: うへぇ！？急にどうしたん！？
+
+もしかしたら自分が見たのは、悪い夢だったのかもしれない。
+
+@char Player pos:75
+Player: ちょっと悪い夢を見ちゃって……
+Friend: 大丈夫？体調とかやばかったら帰るけど……
+
+あまりにも心配されて、少し申し訳なくなる。
+
+Player: い、いや、大丈夫！\\nちょっと歩き疲れただけだから！
+Friend: う～ん……まあ大丈夫ならいいんだけど……\\n何かあったら言ってね～？
+Player: もちろんだよ～
+
+流れる星が目に入る。
+
+Player: ほら！始まったよ～！
+
+Player: （夢みたいなことに、なりませんように……）
+
+Player: 強く、強く願うのであった──
+
+@hideAll wait!
+@secondRound

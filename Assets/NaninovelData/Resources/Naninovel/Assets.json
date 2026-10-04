@@ -57,11 +57,17 @@
         {
             "guid": "2e4aa66a3f31b574b94bc88799964314",
             "prefix": "Scripts",
-            "path": "C2_1",
+            "path": "C1_3",
             "group": ""
         },
         {
             "guid": "9b5e1e959ef70694bb3ee493d1a32614",
+            "prefix": "Scripts",
+            "path": "C2_1",
+            "group": ""
+        },
+        {
+            "guid": "939499e392a89f945b4d4ac868ec2e89",
             "prefix": "Scripts",
             "path": "C2_2",
             "group": ""

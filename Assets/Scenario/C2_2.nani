@@ -1,13 +1,32 @@
-@char Player.Default pos:50 visible!
-Player: いったい何が……
+@back id:Star
 
-@char Player pos:75
-@char Friend pos:25 visible!
-地面にはレジャーシート、空を見れば満天の星。\\n隣にはやはり、{getname("Friend")}がいる。
+@char Player.Default pos:75 visible!
+Player: 綺麗……だったね！
+@char Friend.Default pos:25 visible!
+Friend: うん、すごく良かったぁ
+Friend: {getName("Player")}は何を願ったの？
+Player: 私は……
 
-Player: （どういうこと？さっきまでのは夢？）
+@choice 願い事を言う
+    Player: さっき夢を見たって言ったでしょ？\\nそこで{getname("friend")}がトラックにひかれる夢を見ちゃって……\\nだから……ずっと一緒にいられますように……って
+    Friend: え～なにその夢、悪夢すぎじゃん！
+    Friend: そりゃ泣いちゃうよねぇ
+@choice 秘密にした
+    Player: う～ん……秘密かな！
+    Friend: え～それくらい、いいじゃん～
+    Player: 願いは秘めておく方がいいっていうでしょ？
+    Friend: ぐぬぅ……それはそう……！
 
-しかし夢というにはあまりに現実的過ぎて……
+Player: そういう{getname("friend")}こそ何を願ったの？
+Friend: それはもちろん……秘密だよ♪
 
-@hideAll wait!
-@secondRound
+@hideChars
+夢で見た気がする会話をしながら帰り路を歩く。
+少し前を歩くように、\\nなるべく信号を渡らないように、\\n突然に事態に備えて周りをよく見て。
+挙動不審に見えたのか、{getname("friend")}に笑われてしまった。
+願いが届いたのか、行動を変えたからなのか……\\nそのまま家まで帰ることができた。
+こうして今日が終わった。
+あの夢は現実だったのかは定かではないけれども……\\nまた{getname("Friend")}と学校で会えることを楽しみに、\\n眠りにつくのであった──
+
+@hideAll time:0 wait!
+@finishStory
