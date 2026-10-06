@@ -504,7 +504,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1318824371}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.37453184
+  m_Size: 0.38160658
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -632,8 +632,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 170
-  m_fontSizeBase: 170
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -714,7 +714,7 @@ MonoBehaviour:
         target: {fileID: 664246243}
         settings:
           startValue: {x: 1, y: 1, z: 1}
-          endValue: {x: 1.1, y: 1.1, z: 1.1}
+          endValue: {x: 1.05, y: 1.05, z: 1.05}
           duration: 1
           ease: 2
           customEaseCurve:
@@ -743,7 +743,7 @@ MonoBehaviour:
             m_RotationOrder: 4
           delay: 0
           delayType: 0
-          loops: 2
+          loops: -1
           loopType: 3
           cancelOnError: 0
           skipValuesDuringDelay: 0
@@ -1034,7 +1034,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 25, y: 0}
-  m_SizeDelta: {x: -50, y: 2883.6}
+  m_SizeDelta: {x: -50, y: 2830.14}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1154667293
 MonoBehaviour:
@@ -1056,26 +1056,39 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Asset\nDOTween / DOTween Pro\r\nCopyright (c) 2014-2026 Daniele Giardini
-    - Demigiant\r\nhttps://dotween.demigiant.com/\r\n\r\nBGM\r\n\u7518\u8336\u306E\u97F3\u697D\u5DE5\u623F\uFF08https://amachamusic.chagasi.com/\uFF09\r\nhttps://amachamusic.chagasi.com/music_seishunnohibi.html\r\nhttps://amachamusic.chagasi.com/music_wintertrumpet.html\r\n\r\n\u30D5\u30A9\u30F3\u30C8\r\nM
+  m_text: "OSS\r\n\r\nLitMotion / LitMotion.Animation\r\nCopyright (c) 2023 Yusuke
+    Nakada\r\nReleased under the MIT License\r\nhttps://github.com/annulusgames/LitMotion\r\n\r\nUniTask\r\nCopyright
+    (c) 2019 Yoshifumi Kawai / Cysharp, Inc.\r\nReleased under the MIT License\r\nhttps://github.com/Cysharp/UniTask\r\n\r\nAddressables\r\nCopyright
+    \xA9 2020 Unity Technologies ApS\r\nLicensed under the Unity Companion License\r\nhttps://unity.com/legal/licenses/unity-companion-license\r\n\r\n\u30D5\u30A9\u30F3\u30C8\r\n\r\nM
     PLUS Rounded 1c\r\nCopyright 2016 The Rounded M+ Project Authors.\r\nLicensed
-    under the SIL Open Font License, Version 1.1.\r\nhttps://openfontlicense.org/\r\nhttps://fonts.google.com/specimen/M+PLUS+Rounded+1c\r\n\r\n\u7ACB\u3061\u7D75\r\n[Illust:RAIKO
-    URL:https://raiko.booth.pm/]\r\n\r\n\u80CC\u666F\r\n\u307F\u3093\u3061\u308A\u3048\uFF08https://min-chi.material.jp/
-    \uFF09\r\n\u80CC\u666F\u7D20\u6750\u5C4B\u3055\u3093\uFF08https://haikeisozaiya.booth.pm/\uFF09\r\n\r\nUI\r\n\u30A4\u30E9\u30B9\u30C8AC\uFF08https://www.ac-illust.com/\uFF09\r\nsilhouetteAC\uFF08https://www.silhouette-ac.com/\uFF09\r\n\r\n\u30DC\u30BF\u30F3UI\r\nKenney
-    (https://kenney.nl/)\r\n\n\n--- LitMotion / LitMotion.Animation License ---\r\n\r\nMIT
-    License\r\n\r\nCopyright (c) 2023 Yusuke Nakada\r\n\r\nPermission is hereby granted,
-    free of charge, to any person obtaining a copy\r\nof this software and associated
-    documentation files (the "
+    under the SIL Open Font License, Version 1.1.\r\nhttps://openfontlicense.org/https://fonts.google.com/specimen/M+PLUS+Rounded+1c\r\n\r\n--
+    License ---\r\n\r\n- MIT License\r\n    \r\n    MIT License\r\n    \r\n    LitMotion
+    / LitMotion.Animation\r\n    Copyright (c) 2023 Yusuke Nakada\r\n    \r\n   
+    UniTask\r\n    Copyright (c) 2019 Yoshifumi Kawai / Cysharp, Inc.\r\n    \r\n   
+    Permission is hereby granted, free of charge, to any person obtaining a copy\r\n   
+    of this software and associated documentation files (the \"Software\"), to deal\r\n   
+    in the Software without restriction, including without limitation the rights\r\n   
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r\n   
+    copies of the Software, and to permit persons to whom the Software is\r\n   
+    furnished to do so, subject to the following conditions:\r\n    \r\n    The above
+    copyright notice and this permission notice shall be included in all\r\n    copies
+    or substantial portions of the Software.\r\n    \r\n    THE SOFTWARE IS PROVIDED
+    \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\r\n    IMPLIED, INCLUDING
+    BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\r\n    FITNESS FOR A PARTICULAR
+    PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\r\n    AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\r\n    LIABILITY, WHETHER IN
+    AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\r\n    OUT OF OR IN CONNECTION
+    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\r\n    SOFTWARE."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 081ae06744dd56642be4617b74d1f9f1, type: 2}
+  m_sharedMaterial: {fileID: -1273226128122676318, guid: 081ae06744dd56642be4617b74d1f9f1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1087,17 +1100,17 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: -99
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0
-  m_fontSizeMax: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -1109,19 +1122,19 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 0
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
-  m_isOrthographic: 0
+  m_isOrthographic: 1
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -1191,7 +1204,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1119650461}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.62546813}
+  m_AnchorMin: {x: 0, y: 0.6183934}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -2222,14 +2235,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 2542ad2026e1d2140a2951d00046e01a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

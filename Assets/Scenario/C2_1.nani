@@ -1,3 +1,5 @@
+; naninovelでフェードインさせようか？
+
 @char Player.Default pos:50 visible!
 Player: いったい何が……
 

@@ -76,6 +76,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61f6e3656dc346545ace107be2dd26d0
+    m_Address: Naninovel/Characters/Player/Smail
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 65c37f59e9b266f468dd5381fdc03fc3
     m_Address: Naninovel/UI/SettingsUI
     m_ReadOnly: 0
@@ -247,6 +252,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ea76638b26a915946b62907dd1e776fd
     m_Address: Naninovel/Spawn/DepthOfField
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f299827b9fcc497408442b2618a43464
+    m_Address: Naninovel/Characters/Friend/Smail
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

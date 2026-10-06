@@ -19,9 +19,21 @@
             "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
         },
         {
+            "guid": "f299827b9fcc497408442b2618a43464",
+            "prefix": "Characters/Friend",
+            "path": "Smail",
+            "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
+        },
+        {
             "guid": "b965caee0fe976249948c4cd9f9aee2a",
             "prefix": "Characters/Player",
             "path": "Default",
+            "group": "Characters/8c322188-5edd-4422-9658-51ba240fdcec"
+        },
+        {
+            "guid": "61f6e3656dc346545ace107be2dd26d0",
+            "prefix": "Characters/Player",
+            "path": "Smail",
             "group": "Characters/8c322188-5edd-4422-9658-51ba240fdcec"
         },
         {

@@ -1,7 +1,14 @@
-@back id:Star
+; 演出中の誤タップを無効にする
+@processInput false
+@wait 0.5
+
+; 背景とキャラをゆっくり表示し、完了を待つ
+@back id:Star visible! time:0.7 wait!
+@char Friend.Default pos:50,0 visible!
+
+@processInput true
 
 ; 流れ星が見れる場所にて
-@char Friend.Default pos:50,0 visible!
 Friend: ん〜着いた〜！
 @hide Friend
 
