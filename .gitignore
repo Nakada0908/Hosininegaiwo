@@ -107,9 +107,6 @@ InitTestScene*.unity*
 
 #ignore追加
 
-/[Aa]ssets/TextMesh Pro/
-/[Aa]ssets/TextMesh Pro.meta
-
 #DoTweenPro
 /[Aa]ssets/Plugins/
 /[Aa]ssets/Plugins.meta

@@ -1056,17 +1056,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "OSS\r\n\r\nLitMotion / LitMotion.Animation\r\nCopyright (c) 2023 Yusuke
-    Nakada\r\nReleased under the MIT License\r\nhttps://github.com/annulusgames/LitMotion\r\n\r\nUniTask\r\nCopyright
+  m_text: "## \u30AF\u30EC\u30B8\u30C3\u30C8\uFF08\u4F7F\u7528\u7D20\u6750\uFF09\r\n\r\n\u4F7F\u7528\u30E9\u30A4\u30D6\u30E9\u30EA\r\n\r\nLitMotion
+    / LitMotion.Animation\r\nCopyright (c) 2023 Yusuke Nakada\r\nReleased under the
+    MIT License\r\nhttps://github.com/annulusgames/LitMotion\r\n\r\nUniTask\r\nCopyright
     (c) 2019 Yoshifumi Kawai / Cysharp, Inc.\r\nReleased under the MIT License\r\nhttps://github.com/Cysharp/UniTask\r\n\r\nAddressables\r\nCopyright
-    \xA9 2020 Unity Technologies ApS\r\nLicensed under the Unity Companion License\r\nhttps://unity.com/legal/licenses/unity-companion-license\r\n\r\n\u30D5\u30A9\u30F3\u30C8\r\n\r\nM
-    PLUS Rounded 1c\r\nCopyright 2016 The Rounded M+ Project Authors.\r\nLicensed
-    under the SIL Open Font License, Version 1.1.\r\nhttps://openfontlicense.org/https://fonts.google.com/specimen/M+PLUS+Rounded+1c\r\n\r\n--
-    License ---\r\n\r\n- MIT License\r\n    \r\n    MIT License\r\n    \r\n    LitMotion
-    / LitMotion.Animation\r\n    Copyright (c) 2023 Yusuke Nakada\r\n    \r\n   
-    UniTask\r\n    Copyright (c) 2019 Yoshifumi Kawai / Cysharp, Inc.\r\n    \r\n   
-    Permission is hereby granted, free of charge, to any person obtaining a copy\r\n   
-    of this software and associated documentation files (the \"Software\"), to deal\r\n   
+    \xA9 2020 Unity Technologies ApS\r\nLicensed under the Unity Companion License\r\nhttps://unity.com/legal/licenses/unity-companion-license\r\n\r\n\u4F7F\u7528\u7D20\u6750\r\n\r\n\u7ACB\u3061\u7D75\r\n[Illust:RAIKO
+    URL:https://raiko.booth.pm/]\r\n\r\n\u80CC\u666F\r\n\u307F\u3093\u3061\u308A\u3048\uFF08https://min-chi.material.jp/
+    \uFF09\r\n\r\n\u30D5\u30A9\u30F3\u30C8\r\n\r\nM PLUS Rounded 1c\r\nCopyright
+    2016 The Rounded M+ Project Authors.\r\nLicensed under the SIL Open Font License,
+    Version 1.1.\r\nhttps://openfontlicense.org/\r\nhttps://fonts.google.com/specimen/M+PLUS+Rounded+1c\r\n\r\n--
+    License ---\r\n\r\n- MIT License\r\n    \r\n    MIT License\r\n    \r\n    \u5BFE\u8C61\uFF1ALitMotion
+    / LitMotion.Animation\u3001UniTask\r\n    \r\n    LitMotion / LitMotion.Animation\r\n   
+    \r\n    Copyright (c) 2023 Yusuke Nakada\r\n    \r\n    UniTask\r\n    \r\n   
+    Copyright (c) 2019 Yoshifumi Kawai / Cysharp, Inc.\r\n    \r\n    Permission
+    is hereby granted, free of charge, to any person obtaining a copy\r\n    of this
+    software and associated documentation files (the \"Software\"), to deal\r\n   
     in the Software without restriction, including without limitation the rights\r\n   
     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r\n   
     copies of the Software, and to permit persons to whom the Software is\r\n   
@@ -1078,7 +1082,147 @@ MonoBehaviour:
     PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\r\n    AUTHORS OR COPYRIGHT
     HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\r\n    LIABILITY, WHETHER IN
     AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\r\n    OUT OF OR IN CONNECTION
-    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\r\n    SOFTWARE."
+    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\r\n    SOFTWARE.\r\n   
+    \r\n- SIL Open Font License 1.1\uFF08OFL\uFF09\r\n    \r\n    Copyright 2016
+    The Rounded M+ Project Authors.\r\n    \r\n    This Font Software is licensed
+    under the SIL Open Font License, Version 1.1.\r\n    This license is copied below,
+    and is also available with a FAQ at:\r\n    https://openfontlicense.org\r\n   
+    \r\n    ---\r\n    \r\n    ## SIL OPEN FONT LICENSE Version 1.1 - 26 February
+    2007\r\n    \r\n    PREAMBLE\r\n    The goals of the Open Font License (OFL)
+    are to stimulate worldwide\r\n    development of collaborative font projects,
+    to support the font creation\r\n    efforts of academic and linguistic communities,
+    and to provide a free and\r\n    open framework in which fonts may be shared
+    and improved in partnership\r\n    with others.\r\n    \r\n    The OFL allows
+    the licensed fonts to be used, studied, modified and\r\n    redistributed freely
+    as long as they are not sold by themselves. The\r\n    fonts, including any derivative
+    works, can be bundled, embedded,\r\n    redistributed and/or sold with any software
+    provided that any reserved\r\n    names are not used by derivative works. The
+    fonts and derivatives,\r\n    however, cannot be released under any other type
+    of license. The\r\n    requirement for fonts to remain under this license does
+    not apply\r\n    to any document created using the fonts or their derivatives.\r\n   
+    \r\n    DEFINITIONS\r\n    \"Font Software\" refers to the set of files released
+    by the Copyright\r\n    Holder(s) under this license and clearly marked as such.
+    This may\r\n    include source files, build scripts and documentation.\r\n   
+    \r\n    \"Reserved Font Name\" refers to any names specified as such after the\r\n   
+    copyright statement(s).\r\n    \r\n    \"Original Version\" refers to the collection
+    of Font Software components as\r\n    distributed by the Copyright Holder(s).\r\n   
+    \r\n    \"Modified Version\" refers to any derivative made by adding to, deleting,\r\n   
+    or substituting -- in part or in whole -- any of the components of the\r\n   
+    Original Version, by changing formats or by porting the Font Software to a\r\n   
+    new environment.\r\n    \r\n    \"Author\" refers to any designer, engineer,
+    programmer, technical\r\n    writer or other person who contributed to the Font
+    Software.\r\n    \r\n    PERMISSION & CONDITIONS\r\n    Permission is hereby
+    granted, free of charge, to any person obtaining\r\n    a copy of the Font Software,
+    to use, study, copy, merge, embed, modify,\r\n    redistribute, and sell modified
+    and unmodified copies of the Font\r\n    Software, subject to the following conditions:\r\n   
+    \r\n    1. Neither the Font Software nor any of its individual components,\r\n   
+    in Original or Modified Versions, may be sold by itself.\r\n    2. Original or
+    Modified Versions of the Font Software may be bundled,\r\n    redistributed and/or
+    sold with any software, provided that each copy\r\n    contains the above copyright
+    notice and this license. These can be\r\n    included either as stand-alone text
+    files, human-readable headers or\r\n    in the appropriate machine-readable metadata
+    fields within text or\r\n    binary files as long as those fields can be easily
+    viewed by the user.\r\n    3. No Modified Version of the Font Software may use
+    the Reserved Font\r\n    Name(s) unless explicit written permission is granted
+    by the corresponding\r\n    Copyright Holder. This restriction only applies to
+    the primary font name as\r\n    presented to the users.\r\n    4. The name(s)
+    of the Copyright Holder(s) or the Author(s) of the Font\r\n    Software shall
+    not be used to promote, endorse or advertise any\r\n    Modified Version, except
+    to acknowledge the contribution(s) of the\r\n    Copyright Holder(s) and the
+    Author(s) or with their explicit written\r\n    permission.\r\n    5. The Font
+    Software, modified or unmodified, in part or in whole,\r\n    must be distributed
+    entirely under this license, and must not be\r\n    distributed under any other
+    license. The requirement for fonts to\r\n    remain under this license does not
+    apply to any document created\r\n    using the Font Software.\r\n    \r\n   
+    TERMINATION\r\n    This license becomes null and void if any of the above conditions
+    are\r\n    not met.\r\n    \r\n    DISCLAIMER\r\n    THE FONT SOFTWARE IS PROVIDED
+    \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\r\n    EXPRESS OR IMPLIED, INCLUDING
+    BUT NOT LIMITED TO ANY WARRANTIES OF\r\n    MERCHANTABILITY, FITNESS FOR A PARTICULAR
+    PURPOSE AND NONINFRINGEMENT\r\n    OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER
+    RIGHT. IN NO EVENT SHALL THE\r\n    COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM,
+    DAMAGES OR OTHER LIABILITY,\r\n    INCLUDING ANY GENERAL, SPECIAL, INDIRECT,
+    INCIDENTAL, OR CONSEQUENTIAL\r\n    DAMAGES, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING\r\n    FROM, OUT OF THE USE OR INABILITY TO USE THE
+    FONT SOFTWARE OR FROM\r\n    OTHER DEALINGS IN THE FONT SOFTWARE.\r\n    \r\n-
+    Unity Companion License\r\n    \r\n    \u5BFE\u8C61\uFF1AAddressables\r\n   
+    \r\n    Addressables copyright \xA9 2020 Unity Technologies ApS\r\n    \r\n   
+    \u516C\u5F0F\u30E9\u30A4\u30BB\u30F3\u30B9\r\n    \r\n    Unity Companion License
+    (\"License\")\r\n    \r\n    v1.4\r\n    \r\n    Unity Technologies SF (\u201CUnity\u201D)
+    grants to you a worldwide, non-exclusive, no-charge, and royalty-free copyright
+    license to reproduce, prepare derivative works of, publicly display, publicly
+    perform, and distribute the work of authorship that accompanies this License
+    (\u201CWork\u201D), subject to the following terms and conditions:\r\n    \r\n   
+    1. Unity Companion Use. Exercise of the license granted herein is permitted as
+    long as it is in connection with the authoring and/or distribution of applications,
+    software, or other content under a valid Unity content authoring and rendering
+    engine software license (\u201CEngine License\u201D). That means, for example,
+    as long as you authored content using the Work under an Engine License, you may
+    distribute the Work in connection with that content as you see fit under this
+    License.\r\n    No other exercise of the license granted herein is permitted,
+    and in no event may the Work be used for competitive analysis or to develop a
+    competing product or service.\r\n    2. No Modification of Engine License. Neither
+    this License nor any exercise of the license granted herein modifies the Engine
+    License in any way.\r\n    3. Ownership; Derivative Works.\r\n    3.1 You own
+    your content. In this License, \u201Cderivative works\u201D means derivatives
+    of the Work itself--works derived only from the Work by you under this License
+    (for example, modifying the code of the Work itself to improve its efficacy);
+    \u201Cderivative works\u201D of the Work do not include, for example, games,
+    apps, or content that you create with the Work. You keep all right, title, and
+    interest in your own content.\r\n    3.2 Unity owns its content. While you keep
+    all right, title, and interest to your own content per the above, as between
+    Unity and you, Unity will own all right, title, and interest to all intellectual
+    property rights (including patent, trademark, and copyright) in the Work and
+    derivative works of the Work, and you hereby assign and agree to assign all such
+    rights in those derivative works to Unity.\r\n    Should assignment be invalid
+    for any reason, you grant to Unity an irrevocable, perpetual, worldwide, non-exclusive,
+    no-charge, and royalty-free license (with the right to grant sublicenses) under
+    those intellectual property rights to those derivative works. You also agree
+    to waive or refrain from asserting any author\u2019s right, moral rights, or
+    like rights to the extent necessary to permit exploitation as contemplated under
+    this License.\r\n    3.3 Your right to use derivative works. You will always
+    have the right to use derivative works of the Work you create, consonant with
+    this License.\r\n    4. Trademarks. You are not granted any right or license
+    under this License to use any trademarks, service marks, trade names, products
+    names, or branding of Unity or its affiliates (\u201CTrademarks\u201D). Descriptive
+    uses of Trademarks are permitted; see, for example, Unity\u2019s Trademark Guidelines
+    at https://unity.com/legal/branding_trademarks.\r\n    5. Notices & Third-Party
+    Rights. This License, including the copyright notice associated with the Work,
+    must be provided in all substantial portions of the Work and derivative works
+    thereof (or, if that is impracticable, in any other location where such notices
+    are customarily placed). Further, if the Work is accompanied by a Unity \u201Cthird-party
+    notices\u201D or similar file, you acknowledge and agree that software or content
+    identified in that file is governed by those separate license terms.\r\n    6.
+    DISCLAIMER, LIMITATION OF LIABILITY. THE Work AND ANY DERIVATIVE WORKS THEREOF
+    IS PROVIDED ON AN \"AS IS\" BASIS, AND IS PROVIDED WITHOUT WARRANTY OF ANY KIND,
+    WHETHER EXPRESS OR IMPLIED, INCLUDING ANY WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE, AND/OR NON-INFRINGEMENT.\r\n    IN NO EVENT SHALL ANY
+    COPYRIGHT HOLDER OR AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES (WHETHER DIRECT,
+    INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL, INCLUDING PROCUREMENT
+    OF SUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA, OR PROFITS, AND BUSINESS
+    INTERRUPTION), OR OTHER LIABILITY WHATSOEVER, WHETHER IN AN ACTION OF CONTRACT,
+    TORT, OR OTHERWISE, ARISING FROM OR OUT OF, OR IN CONNECTION WITH, THE Work OR
+    ANY DERIVATIVE WORKS THEREOF OR THE USE OF OR OTHER DEALINGS IN SAME, EVEN WHERE
+    ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n    7. USE IS ACCEPTANCE and License
+    Versions. Your access to and use of the Work constitutes your acceptance of this
+    License and its terms and conditions. This License may be modified or updated;
+    upon any such modification or update, you will comply with the terms of the updated
+    License for any use of any of the Work under the updated License.\r\n    8. Use
+    in Compliance with Law and Termination.\r\n    Your exercise of the license granted
+    herein will at all times be in compliance with applicable law and will not infringe
+    any proprietary rights (including intellectual property rights); this License
+    will terminate immediately (i) on any breach by you of this License; and (ii)
+    if you commence any form of patent litigation, including a cross-claim or counterclaim,
+    against anyone wherein you allege that the Work constitutes direct or secondary/indirect
+    patent infringement.\r\n    9. Severability. If any provision of this License
+    is held to be unenforceable or invalid, that provision will be enforced to the
+    maximum extent possible and the other provisions will remain in full force and
+    effect.\r\n    10. Governing Law and Venue. This License is governed by and construed
+    in accordance with the laws of the United States and the state of California,
+    except for its conflict of laws rules; the United Nations Convention on Contracts
+    for the International Sale of Goods will not apply. You and Unity agree to submit
+    to the personal and exclusive jurisdiction of and venue in the state and federal
+    courts located in San Francisco County, California concerning any dispute arising
+    out of this License.\r\n    \r\n    (10.29.2024)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 081ae06744dd56642be4617b74d1f9f1, type: 2}
   m_sharedMaterial: {fileID: -1273226128122676318, guid: 081ae06744dd56642be4617b74d1f9f1, type: 2}
