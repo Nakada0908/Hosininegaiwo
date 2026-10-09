@@ -8,39 +8,39 @@
 @processInput true
 
 
-Player: いったい何が……
+Player.Odoroku: いったい何が……
 
 @char Player pos:75
-@char Friend pos:25 visible!
+@char Friend.AoriSmail pos:25 visible!
 地面にはレジャーシート、空を見れば満天の星。\\n隣にはやはり、{getname("Friend")}がいる。
 
 Player: （どういうこと？さっきまでのは夢？）
 
 しかし夢というにはあまりに現実的過ぎて……
 でもそんなことより……
-@char Player pos:50 easing:EaseOutQuad time:0.3
+@char Player.Kanasii pos:50 easing:EaseOutQuad time:0.3 visible!
 {getname("Friend")}が生きていたことに涙を流しながら抱き着く。
 
 Player: 生きてる……生きててよかったぁ……！
-Friend: うへぇ！？急にどうしたん！？
+Friend.Odoroku: うへぇ！？急にどうしたん！？
 
 もしかしたら自分が見たのは、悪い夢だったのかもしれない。
 
 @char Player pos:75 easing:EaseInQuad time:0.3
 Player: ちょっと悪い夢を見ちゃって……
-Friend: 大丈夫？体調とかやばかったら帰るけど……
+Friend.Kanasii: 大丈夫？体調とかやばかったら帰るけど……
 
 あまりにも心配されて、少し申し訳なくなる。
 
-Player: い、いや、大丈夫！\\nちょっと歩き疲れただけだから！
-Friend: う～ん……まあ大丈夫ならいいんだけど……\\n何かあったら言ってね～？
+Player.Default: い、いや、大丈夫！\\nちょっと歩き疲れただけだから！
+Friend.Default: う～ん……まあ大丈夫ならいいんだけど……\\n何かあったら言ってね～？
 Player: もちろんだよ～
 
 流れる星が目に入る。
 
-Player: ほら！始まったよ～！
+Player.Smail: ほら！始まったよ～！
 
-Player: （夢みたいなことに、なりませんように……）
+Player.Sinken: （夢みたいなことに、なりませんように……）
 
 Player: 強く、強く願うのであった──
 

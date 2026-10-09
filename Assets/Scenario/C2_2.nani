@@ -10,37 +10,37 @@
 
 @processInput true
 
-@char Player.Default pos:75 visible!
+@char Player.Smail pos:75 visible!
 Player: 綺麗……だったね！
-@char Friend.Default pos:25 visible!
+@char Friend.AoriSmail pos:25 visible!
 Friend: うん、すごく良かったぁ
-Friend: {getName("Player")}は何を願ったの？
-Player: 私は……
+Friend.Default: {getName("Player")}は何を願ったの？
+Player.Kanasii: 私は……
 
 @choice 願い事を言う
     Player: さっき夢を見たって言ったでしょ？\\nそこで{getname("friend")}がトラックにひかれる夢を見ちゃって……\\nだから……ずっと一緒にいられますように……って
-    Friend: え～なにその夢、悪夢すぎじゃん！
-    Friend: そりゃ泣いちゃうよねぇ
+    Friend.Odoroku: え～なにその夢、悪夢すぎじゃん！
+    Friend.Kanasii: そりゃ泣いちゃうよねぇ
 @choice 秘密にした
-    Player: う～ん……秘密かな！
-    Friend: え～それくらい、いいじゃん～
-    Player: 願いは秘めておく方がいいっていうでしょ？
-    Friend: ぐぬぅ……それはそう……！
+    Player.Smail: う～ん……秘密かな！
+    Friend.Default: え～それくらい、いいじゃん～
+    Player.Uinku: 願いは秘めておく方がいいっていうでしょ？
+    Friend.mumumu: ぐぬぅ……それはそう……！
 
-Player: そういう{getname("friend")}こそ何を願ったの？
+Player.Default: そういう{getname("friend")}こそ何を願ったの？
 
 ; デバッグ、エラー時用にnull時にfalseにする
 @set talkSecret?=false
 @if "!talkSecret"
 @shake Friend count:1 ver! power:1
-Friend: それはもちろん……秘密だよ♪
+Friend.AoriSmail: それはもちろん……秘密だよ♪
 @else
-Friend: 私？私は……うーん……
-Friend: えっと……笑わないで聞いてよ？
-Friend: ずっと……{getname("player")}といられますように……って
-Player: ……ぷっ、はは……！
+Friend.mumumu: 私？私は……うーん……
+Friend.Kanasii: えっと……笑わないで聞いてよ？
+Friend.Smail: ずっと……{getname("player")}といられますように……って
+Player.Smail: ……ぷっ、はは……！
 @shake Friend count:1 ver!
-Friend: ちょっと！？笑うなって言ったでしょー！
+Friend.Angry: ちょっと！？笑うなって言ったでしょー！
 @endIf
 
 @hideChars

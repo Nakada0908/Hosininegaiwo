@@ -13,9 +13,45 @@
             "group": "Backgrounds/ea017ab2-593a-49f2-9a8c-239da8504236"
         },
         {
+            "guid": "6d4377174ea1c6c42a897c8ec34aab46",
+            "prefix": "Characters/Friend",
+            "path": "Angry",
+            "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
+        },
+        {
+            "guid": "efc550fa1766fd941a4068e25212a939",
+            "prefix": "Characters/Friend",
+            "path": "AoriSmail",
+            "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
+        },
+        {
             "guid": "cfe38f5d6d52ac746981d196a73f5ea9",
             "prefix": "Characters/Friend",
             "path": "Default",
+            "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
+        },
+        {
+            "guid": "aa5f03dd9a134fa4691f2dd95e969b32",
+            "prefix": "Characters/Friend",
+            "path": "Gyagu_Gan",
+            "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
+        },
+        {
+            "guid": "cd5a00e483cb9064da424af3c902b3ef",
+            "prefix": "Characters/Friend",
+            "path": "Kanasii",
+            "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
+        },
+        {
+            "guid": "a020abf29f805534594ef6b52ab05871",
+            "prefix": "Characters/Friend",
+            "path": "mumumu",
+            "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
+        },
+        {
+            "guid": "b74e10934ea20a54ebb2c2c490c7fdd0",
+            "prefix": "Characters/Friend",
+            "path": "Odoroku",
             "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
         },
         {
@@ -25,15 +61,57 @@
             "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
         },
         {
+            "guid": "00948707fe7ba7544b907679fe2be0ca",
+            "prefix": "Characters/Friend",
+            "path": "Uinnku",
+            "group": "Characters/810811a6-b8cc-471e-933a-5e6a6a7a83cd"
+        },
+        {
             "guid": "b965caee0fe976249948c4cd9f9aee2a",
             "prefix": "Characters/Player",
             "path": "Default",
             "group": "Characters/8c322188-5edd-4422-9658-51ba240fdcec"
         },
         {
+            "guid": "42de6f55091b37a46a496af34c5aec8d",
+            "prefix": "Characters/Player",
+            "path": "Kanasii",
+            "group": "Characters/8c322188-5edd-4422-9658-51ba240fdcec"
+        },
+        {
+            "guid": "86a28537f309be84792794a3d8b32270",
+            "prefix": "Characters/Player",
+            "path": "Mesorasi",
+            "group": "Characters/8c322188-5edd-4422-9658-51ba240fdcec"
+        },
+        {
+            "guid": "66857aa1f73c6054ba83ea9a48fc185d",
+            "prefix": "Characters/Player",
+            "path": "Odoroku",
+            "group": "Characters/8c322188-5edd-4422-9658-51ba240fdcec"
+        },
+        {
+            "guid": "8af2ee4a9f78ecf4c8f2ea7d8b95a468",
+            "prefix": "Characters/Player",
+            "path": "Sinken",
+            "group": "Characters/8c322188-5edd-4422-9658-51ba240fdcec"
+        },
+        {
             "guid": "61f6e3656dc346545ace107be2dd26d0",
             "prefix": "Characters/Player",
             "path": "Smail",
+            "group": "Characters/8c322188-5edd-4422-9658-51ba240fdcec"
+        },
+        {
+            "guid": "516f6081cb970ee4a9cf62db463b2498",
+            "prefix": "Characters/Player",
+            "path": "Uinku",
+            "group": "Characters/8c322188-5edd-4422-9658-51ba240fdcec"
+        },
+        {
+            "guid": "690fdcc1ebe717b439a9089e11b96e8c",
+            "prefix": "Characters/Player",
+            "path": "Zitome",
             "group": "Characters/8c322188-5edd-4422-9658-51ba240fdcec"
         },
         {

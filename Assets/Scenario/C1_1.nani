@@ -1,37 +1,44 @@
 @back id:School
 
 ; 初めはキャラを覚えてもらうために表示させ続ける
-@char Friend.Default visible! pos:25,0
+@char Friend.Smail visible! pos:25,0
 Friend: ねぇねぇ！今夜流れ星を見に行かない！？
-@char Player.Default visible! pos:75,0
+@char Player.Zitome visible! pos:75,0
 Player: えぇ〜、また突然……
+Player.Default: 
 
 {getName("Friend")}はいつものように、突然どこかへ行かないかと誘ってくる。
 なんだかんだそれに乗り、色んなところに行ってしまう。
 
+@shake Friend count:2 ver! time:0.2 power:2
 Friend: 今夜、ここで流星群が見れるんだって！
 
 そういって{getname("friend")}はスマホを見せてくる。
 
-Player: うわ、微妙に遠くない？
-Friend: でもギリ電車で行けるよ♪
+Player.Zitome: うわ、微妙に遠くない？
+Friend.VerySmail: でもギリ電車で行けるよ♪
 
+@hideChars
 絶妙に行ける距離とタイミングで誘ってくる。
 まったく、タチが悪い。
 とはいえその日は暇である……
 
+@char Player.Default pos:75, visible!
 Player: ん〜行くか〜
+@char Friend.Smail pos:25, visible!
+@shake Friend count:2 ver! time:0.2 power:2
 Friend: やった〜！
 
 {getName("Friend")}は嬉しそうにする。
 この表情を見たくて、いつも出かけることを了承してしまう。
 
-Friend: それじゃあ、帰りそのまま一緒に行こ！
+Friend.Default: それじゃあ、帰りそのまま一緒に行こ！
 Player: はいはい
 
 いつも通り適当な返事で、軽く予定が決まっていく。
 
-Player: なんだかなぁ
+@hide Friend
+Player.Smail: なんだかなぁ[slide Player.Smail to:50 wait! easing:EaseInQuad time:0.5]
 ; 小さい声で微笑む
 
 @hideChars wait! time:0.3

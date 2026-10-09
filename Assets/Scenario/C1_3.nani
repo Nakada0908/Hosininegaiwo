@@ -11,36 +11,38 @@
 @processInput true
 
 @char Player.Default visible! pos:75
-Player: 綺麗だったね〜
+Player.Smail: 綺麗だったね〜
 @char Friend.Default visible! pos:25
-Friend: うん、すごく良かったぁ
+Friend.Smail: うん、すごく良かったぁ
 Friend: {getName("Player")}は何を願ったの？
 
 初めて見る流星群に目を奪われて、\\nそれをキラキラした目で見る{getname("friend")}にも見惚れて……\\n願い事をすることすら忘れていた。
 
-Player: あ～そんなのあったね
-Friend: え～！何も願い事なく見てたの！？\\n確かに見てるだけでも良かったけどさ～
-Player: そういう{getname("friend")}は何を願ったの？
-Friend: 私？私はねぇ……秘密かな！
-Player: え〜それくらい、いいじゃん〜
+Player.Zitome: あ～そんなのあったね
+Friend.Gyagu_Gan: え～！何も願い事なく見てたの！？\\n確かに見てるだけでも良かったけどさ～
+Player.Default: そういう{getname("friend")}は何を願ったの？
+Friend.AoriSmail: 私？私はねぇ……秘密かな！
+Player.Zitome: え〜それくらい、いいじゃん〜
 
+Player.Smail: 
+Friend.Smail: 
 二人で笑い合う。
 
 Friend: 願いは秘めておく方がいいっていうじゃん♪
-Friend: あ、それでいうと流れ星に3回願い事をすると、願いが叶うってあるじゃん？
-Player: よく聞くヤツね
+Friend.Default: あ、それでいうと流れ星に3回願い事をすると、願いが叶うってあるじゃん？
+Player.Default: よく聞くヤツね
 Friend: それって突然流れてくる流れ星に、即座に3回願えるほど強く、 \\n強く願ってる人はきっと自身の力でも叶えうる……\\nって話らしいよ？
-Player: 言語化されると……夢がないなぁ
+Player.Mesorasi: 言語化されると……夢がないなぁ
 Friend: ね〜でもこういう話も面白くない？
-Player: それは……確かに
-Player: っていうか流星群だと来るのがわかってて願ってるから……だめじゃない？
-Friend: あ、たしかに〜
+Player.Default: それは……確かに
+Player.Odoroku: っていうか流星群だと来るのがわかってて願ってるから……だめじゃない？
+Friend.Smail: あ、たしかに！
 ; (˶ᐢᗜᐢ˶)//たはは〜って感じ<br>
 
 たわいない話をしながら、帰りの電車に向かう。
 
-Player: ここの信号渡った先が駅だね
-Friend: うん！地図的にもそのはず！
+Player.Default: ここの信号渡った先が駅だね
+Friend.Default: うん！地図的にもそのはず！
 
 @hideChars
 そう話しながら横断歩道を渡る。
@@ -52,8 +54,9 @@ Friend: うん！地図的にもそのはず！
 Player: （危な……）
 
 ; ここに光る演出入れたいね
+@char Friend.Odoroku
 声に出すより先に、異常な速度でトラックが突っ込んでくる。
-@char Friend.Default pos:150 easing:EaseOutQuad wait! time:0.1
+@char Friend.Odoroku pos:150 easing:EaseOutQuad wait! time:0.1
 それは{getname("Friend")}を容赦なく弾き飛ばす。
 少しも動かなくなった{getname("Friend")}の体を\\nただ見ているしかできない。
 あらぬ方向に曲がった足、腕、\\nそして……首。
@@ -63,7 +66,7 @@ Player: （危な……）
 
 ; 時が戻る
 @char Player.Default pos:50 visible!
-Player: ……えっ？
+Player.Odoroku: ……えっ？
 
 @hideChars
 私は戻っていた。あの場所に。
