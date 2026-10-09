@@ -1,6 +1,13 @@
-; naninovelでフェードインさせようか？
+; 演出中の誤タップを無効にする
+@processInput false
+@wait 0.5
 
-@char Player.Default pos:50 visible!
+; 背景とキャラをゆっくり表示し、完了を待つ
+@char Player.Default pos:50 visible! wait!
+
+@processInput true
+
+
 Player: いったい何が……
 
 @char Player pos:75
@@ -38,4 +45,6 @@ Player: （夢みたいなことに、なりませんように……）
 Player: 強く、強く願うのであった──
 
 @hideAll wait!
+; ナニノベルで変数の初期化
+@set talkSecret=false
 @secondRound

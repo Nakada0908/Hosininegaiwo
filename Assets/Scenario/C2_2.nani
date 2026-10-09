@@ -28,7 +28,20 @@ Player: 私は……
     Friend: ぐぬぅ……それはそう……！
 
 Player: そういう{getname("friend")}こそ何を願ったの？
+
+; デバッグ、エラー時用にnull時にfalseにする
+@set talkSecret?=false
+@if "!talkSecret"
+@shake Friend count:1 ver! power:1
 Friend: それはもちろん……秘密だよ♪
+@else
+Friend: 私？私は……うーん……
+Friend: えっと……笑わないで聞いてよ？
+Friend: ずっと……{getname("player")}といられますように……って
+Player: ……ぷっ、はは……！
+@shake Friend count:1 ver!
+Friend: ちょっと！？笑うなって言ったでしょー！
+@endIf
 
 @hideChars
 夢で見た気がする会話をしながら帰り道を歩く。

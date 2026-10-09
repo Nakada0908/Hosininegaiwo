@@ -33,13 +33,12 @@ Friend.Default: こっちの方が穴場らしいから行こ！
 そう言って、手を引っ張ってくる。
 
 Player.Default: はいはい、付いていくからもう少しゆっくり～
+@slide Player.Default wait! time:0.5 to:-20
 @hideChars
 
 持ってきていたレジャーシートを敷いて、2人で並んで空を眺める。
 やがて、時間になったのか、星が流れていく
 
 ; ゲーム開始
-; ナニノベルで変数の準備
-@set talkSecret=false
 @hideAll wait!
 @firstRound
