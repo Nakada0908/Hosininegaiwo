@@ -1,19 +1,21 @@
 ﻿using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
+using Cysharp.Threading.Tasks.Triggers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MySceneManager : MonoBehaviour
 {
-    public static MySceneManager Instance;
+    public static MySceneManager Instance { get; private set; }
 
     private string currentLoadScene = "";
     private bool isLoading = false;
-
     private List<string> baseScenes = new List<string>
     {
         "Bootstrap",
     };
+
+    [SerializeField] private CanvasGroup fadeCanvas;
 
     private void Awake()
     {
@@ -73,12 +75,17 @@ public class MySceneManager : MonoBehaviour
         currentLoadScene = firstSceneName;
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentLoadScene));
 
+        await FadeOut();
+
         isLoading = false;
     }
 
     private async UniTask TransitionRoutine(string nextSceneName)
     {
         isLoading = true;
+
+        await FadeIn();
+
         string preSceneName = currentLoadScene;
 
         //次のシーンを読み込み、完了を待つ
@@ -89,6 +96,27 @@ public class MySceneManager : MonoBehaviour
         await SceneManager.UnloadSceneAsync(preSceneName);
         currentLoadScene = nextSceneName;
 
+        await FadeOut();
+
         isLoading = false;
+    }
+
+    private async UniTask FadeIn()
+    {
+        while (fadeCanvas.alpha < 1f)
+        {
+            //割合でフェードインする、そしてタイムスケールに依存しないようにする
+            fadeCanvas.alpha = Mathf.MoveTowards(fadeCanvas.alpha, 1f, Time.unscaledDeltaTime * 3f);
+            await UniTask.NextFrame();
+        }
+    }
+
+    private async UniTask FadeOut()
+    {
+        while (fadeCanvas.alpha > 0f)
+        {
+            fadeCanvas.alpha = Mathf.MoveTowards(fadeCanvas.alpha, 0f, Time.unscaledDeltaTime * 3f);
+            await UniTask.NextFrame();
+        }
     }
 }
