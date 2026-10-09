@@ -25,6 +25,12 @@ public class StarMove : MonoBehaviour
 
         if(hitCount >= hitMaxCount)
         {
+            //特殊な星の場合、TalkSecretメソッドを呼び出す
+            if (GetComponent<SecretStar>() != null)
+            {
+                GetComponent<SecretStar>().TalkSecret();
+            }
+
             ScoreManeger.Instance.AddScore();
             Destroy(gameObject);
         }
