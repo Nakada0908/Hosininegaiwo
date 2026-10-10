@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Naninovel
   m_GUID: 0a6a7b80dd5f62c4ea10b45c12abb194
   m_SerializeEntries:
+  - m_GUID: 00948707fe7ba7544b907679fe2be0ca
+    m_Address: Naninovel/Characters/Friend/Uinnku
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0e61df696cabbea448510879ee732b00
     m_Address: Naninovel/ChoiceHandlers/ChatReply
     m_ReadOnly: 0
@@ -22,6 +27,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1224d69e1592d624cbde93d0f7383d91
     m_Address: Naninovel/Spawn/ShakeCharacter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1903fb2cdb2db754dbe443f789b7f0bb
+    m_Address: "Naninovel/Backgrounds/Star/\u5B87\u5B99"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -45,6 +55,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b22f3168f1fbd3418a6238006fad356
+    m_Address: Naninovel/ChoiceHandlers/ButtonList
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 42de6f55091b37a46a496af34c5aec8d
+    m_Address: Naninovel/Characters/Player/Kanasii
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C2_1
+    - Scripts/C2_2
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 480f5db62ea305c46b89a86496d2a0c9
     m_Address: Naninovel/UI/PauseUI
     m_ReadOnly: 0
@@ -61,15 +83,37 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 516f6081cb970ee4a9cf62db463b2498
+    m_Address: Naninovel/Characters/Player/Uinku
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C2_2
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 53aad00e5cf184e458adb001c550518a
     m_Address: Naninovel/UI/LoadingUI
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61f6e3656dc346545ace107be2dd26d0
+    m_Address: Naninovel/Characters/Player/Smail
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C1_1
+    - Scripts/C1_3
+    - Scripts/C2_1
+    - Scripts/C2_2
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 65c37f59e9b266f468dd5381fdc03fc3
     m_Address: Naninovel/UI/SettingsUI
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66857aa1f73c6054ba83ea9a48fc185d
+    m_Address: Naninovel/Characters/Player/Odoroku
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C1_3
+    - Scripts/C2_1
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 671ceb4f549ddf046913d7debf113469
     m_Address: Naninovel/UI/ExternalScriptsUI
@@ -80,6 +124,19 @@ MonoBehaviour:
     m_Address: Naninovel/Scripts/C1_2, Naninovel/Scripts/First_Hosi
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 690fdcc1ebe717b439a9089e11b96e8c
+    m_Address: Naninovel/Characters/Player/Zitome
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C1_1
+    - Scripts/C1_3
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d4377174ea1c6c42a897c8ec34aab46
+    m_Address: Naninovel/Characters/Friend/Angry
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C2_2
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6f9836a3c4f777741b1962979d97e485
     m_Address: Naninovel/TextPrinters/Chat
@@ -116,10 +173,22 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86a28537f309be84792794a3d8b32270
+    m_Address: Naninovel/Characters/Player/Mesorasi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C1_3
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 88d03f19bcbff914ba33a7c9895e2d7c
     m_Address: Naninovel/UI/ConfirmationUI
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8af2ee4a9f78ecf4c8f2ea7d8b95a468
+    m_Address: Naninovel/Characters/Player/Sinken
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C2_1
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8d53726b3d08433479398f02b4780e7f
     m_Address: Naninovel/UI/SaveLoadUI
@@ -151,6 +220,12 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a020abf29f805534594ef6b52ab05871
+    m_Address: Naninovel/Characters/Friend/mumumu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C2_2
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a32c73a3aff4b274c85b3ff16c854b07
     m_Address: Naninovel/UI/RollbackUI
     m_ReadOnly: 0
@@ -158,6 +233,17 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a9117e2fa90704d45b3e1461596c11ee
     m_Address: Naninovel/Spawn/Rain
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa5f03dd9a134fa4691f2dd95e969b32
+    m_Address: Naninovel/Characters/Friend/Gyagu_Gan
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C1_3
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ab217e5289ac0d9479b6d51776ab4cda
+    m_Address: Naninovel/TextPrinters/Dialogue
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -170,6 +256,24 @@ MonoBehaviour:
     m_Address: Naninovel/TextPrinters/Bubble
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b74e10934ea20a54ebb2c2c490c7fdd0
+    m_Address: Naninovel/Characters/Friend/Odoroku
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C1_3
+    - Scripts/C2_1
+    - Scripts/C2_2
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b965caee0fe976249948c4cd9f9aee2a
+    m_Address: Naninovel/Characters/Player/Default
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C1_1
+    - Scripts/C1_2
+    - Scripts/C1_3
+    - Scripts/C2_1
+    - Scripts/C2_2
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bb95f484e341dcd4391a572f22b7d067
     m_Address: Naninovel/UI/VariableInputUI
@@ -196,6 +300,23 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd5a00e483cb9064da424af3c902b3ef
+    m_Address: Naninovel/Characters/Friend/Kanasii
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C2_1
+    - Scripts/C2_2
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cfe38f5d6d52ac746981d196a73f5ea9
+    m_Address: Naninovel/Characters/Friend/Default
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C1_1
+    - Scripts/C1_2
+    - Scripts/C1_3
+    - Scripts/C2_1
+    - Scripts/C2_2
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dd85ce99288c2f8488447fa511b1c0d6
     m_Address: Naninovel/UI/ToastUI
     m_ReadOnly: 0
@@ -213,6 +334,27 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ea76638b26a915946b62907dd1e776fd
     m_Address: Naninovel/Spawn/DepthOfField
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: efc550fa1766fd941a4068e25212a939
+    m_Address: Naninovel/Characters/Friend/AoriSmail
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C1_3
+    - Scripts/C2_1
+    - Scripts/C2_2
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f299827b9fcc497408442b2618a43464
+    m_Address: Naninovel/Characters/Friend/Smail
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts/C1_1
+    - Scripts/C1_3
+    - Scripts/C2_2
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f54e7e0e5e37cd24fa5b2b60760dbdb9
+    m_Address: "Naninovel/Backgrounds/School/\u6559\u5BA4\u306E\u524D\u306E\u30C9\u30A2\uFF08\u65E5\u4E2D\u30FB\u958B\uFF09"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

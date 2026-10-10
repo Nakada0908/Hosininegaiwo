@@ -1,5 +1,4 @@
 @back id:School
-
 ; 初めはキャラを覚えてもらうために表示させ続ける
 @char Friend.Smail visible! pos:25,0
 Friend: ねぇねぇ！今夜流れ星を見に行かない！？
@@ -16,7 +15,7 @@ Friend: 今夜、ここで流星群が見れるんだって！
 そういって{getname("friend")}はスマホを見せてくる。
 
 Player.Zitome: うわ、微妙に遠くない？
-Friend.VerySmail: でもギリ電車で行けるよ♪
+Friend.AoriSmail: でもギリ電車で行けるよ♪
 
 @hideChars
 絶妙に行ける距離とタイミングで誘ってくる。
