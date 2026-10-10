@@ -35,6 +35,8 @@ public class MySceneManager : MonoBehaviour
         {
             currentLoadScene = activeSceneName;
         }
+
+        FadeOut().Forget(Debug.LogException);
     }
 
     public void InitializeGame(string firstSceneName)

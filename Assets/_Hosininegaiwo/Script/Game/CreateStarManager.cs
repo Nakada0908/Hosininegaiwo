@@ -63,7 +63,7 @@ public class CreateStarManager : MonoBehaviour
         }
 
         //生成位置をランダムに決定
-        float x = Random.Range(0.7f, 1.1f);
+        float x = Random.Range(0.7f, 1.3f);
 
         //カメラをもとにワールド座標に変換して生成
         Vector3 position = mainCamera.ViewportToWorldPoint(
