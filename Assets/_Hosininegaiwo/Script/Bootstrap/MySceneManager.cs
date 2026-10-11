@@ -9,7 +9,7 @@ public class MySceneManager : MonoBehaviour
     public static MySceneManager Instance { get; private set; }
 
     private string currentLoadScene = "";
-    private bool isLoading = false;
+    public bool isLoading { get; private set; } = false;
     private List<string> baseScenes = new List<string>
     {
         "Bootstrap",
@@ -37,8 +37,6 @@ public class MySceneManager : MonoBehaviour
         {
             currentLoadScene = activeSceneName;
         }
-
-        FadeOut().Forget(Debug.LogException);
     }
 
     public void InitializeGame(string firstSceneName)
@@ -74,6 +72,7 @@ public class MySceneManager : MonoBehaviour
     private async UniTask InitializeRoutine(string firstSceneName)
     {
         isLoading = true;
+
         try
         {
             Time.timeScale = stopTimeScale;

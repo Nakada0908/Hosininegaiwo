@@ -28,6 +28,7 @@ public class TitleSettings : MonoBehaviour
 
     public async void OnClickStartButton()
     {
+        if (MySceneManager.Instance.isLoading) return;
         if (startingGame) return;
         startingGame = true;
 
