@@ -19,7 +19,7 @@ Friend: ん〜着いた〜！
 @char Friend.Default pos:25,0 visible!
 @char Player.Default pos:75,0 visible!
 Player: ここなら綺麗に見れそうだね
-; 文字表示と同時にぴょんと跳ねさせる
+; 文字表示と同時に上にぴょんと跳ねさせる
 @async
     @char Friend.Default pos:,5 easing:EaseOutQuad time:0.3
     @char Friend.Default pos:,0 easing:EaseInOutQuad time:0.3

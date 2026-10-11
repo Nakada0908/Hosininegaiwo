@@ -41,5 +41,6 @@ Player.Smail: なんだかなぁ[slide Player.Smail to:50 wait! easing:EaseInQua
 ; 小さい声で微笑む
 
 @hideChars wait! time:0.3
+@hidePrinter Dialogue time:0 wait!
 
 @goto C1_2

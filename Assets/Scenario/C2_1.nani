@@ -3,18 +3,25 @@
 @wait 0.5
 
 ; 背景とキャラをゆっくり表示し、完了を待つ
-@char Player.Default pos:50 visible! wait!
+@char Player.Kanasii pos:50 visible! wait!
+; 時が戻る演出
+@trans RadialWiggle time:1
 
 @processInput true
 
+@char Player.Odoroku pos:50 visible!
+Player: ……えっ？
 
-Player.Odoroku: いったい何が……
+@hideChars
+私は戻っていた。あの場所に。
+隣を見れば{getName("Friend")}が居た。
+先程までのことが嘘だったかのように。
 
-@char Player pos:75
+@char Player pos:75 visible!
 @char Friend.AoriSmail pos:25 visible!
-地面にはレジャーシート、空を見れば満天の星。\\n隣にはやはり、{getname("Friend")}がいる。
+地面にはレジャーシート、空を見れば満天の星。\\n隣には{getname("Friend")}がいる。
 
-Player: （どういうこと？さっきまでのは夢？）
+Player: （どういうこと？さっきまでのは……夢？）
 
 しかし夢というにはあまりに現実的過ぎて……
 でもそんなことより……

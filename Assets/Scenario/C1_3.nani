@@ -1,5 +1,3 @@
-; ここはオリジナルシーン切り替えでフェードするように変更予定
-
 ; 演出中の誤タップを無効にする
 @processInput false
 @wait 0.5
@@ -49,28 +47,33 @@ Friend.Default: うん！地図的にもそのはず！
 @char Friend.Default pos:50 visible!
 少し走るように前を行く{getname("Friend")}が振り返る。
 追いつこうと歩みを速めた足は、
+
+; 光る演出
+@async
+    @back id:white time:0.2 wait!
+    @wait 0.5
+    @hide white time:0.5 wait!
 瞬間目に入ってきた光に\\n思わず足を止めた。
 
 Player: （危な……）
 
-; ここに光る演出入れたいね
 @char Friend.Odoroku
 声に出すより先に、異常な速度でトラックが突っ込んでくる。
+; カメラIDにないからメモ帳から直打ち(´・ω・`)
+@shake Camera !wait count:3 time:0.1 hor! ver!
 @char Friend.Odoroku pos:150 easing:EaseOutQuad wait! time:0.1
 それは{getname("Friend")}を容赦なく弾き飛ばす。
 少しも動かなくなった{getname("Friend")}の体を\\nただ見ているしかできない。
 あらぬ方向に曲がった足、腕、\\nそして……首。
 誰がどう見ても即死である。
+
+; 次までが短いから念のためIDつけて待機させる
+@async BackgroundSway
+    ; 背景Starだけを左右に揺らす。
+    @shake Star count:3 time:0.6 power:0.2 hor! !ver wait!
 受け入れがたい事態に足がふらつき、俯く。
 それでも早く救急車を呼べば助かるかもしれないと、\\n急いでスマホを取り出そうとする。
 
-; 時が戻る
-@char Player.Default pos:50 visible!
-Player.Odoroku: ……えっ？
-
-@hideChars
-私は戻っていた。あの場所に。
-隣を見れば{getName("Friend")}が居た。
-先程までのことが嘘だったかのように。
-
+; 背景の揺れが終わってから次の章へ進む。
+@await BackgroundSway
 @goto C2_1

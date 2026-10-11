@@ -13,6 +13,12 @@
             "group": "Backgrounds/ea017ab2-593a-49f2-9a8c-239da8504236"
         },
         {
+            "guid": "4d0a558666aa7f941a8ed49cf999e99c",
+            "prefix": "Backgrounds/white",
+            "path": "white",
+            "group": "Backgrounds/6ed02332-0e5c-4794-ba42-796f097b60a9"
+        },
+        {
             "guid": "6d4377174ea1c6c42a897c8ec34aab46",
             "prefix": "Characters/Friend",
             "path": "Angry",

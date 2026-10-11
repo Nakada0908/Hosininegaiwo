@@ -1,5 +1,3 @@
-; ここはオリジナルシーン切り替えでフェードするように変更予定
-
 ; 演出中の誤タップを無効にする
 @processInput false
 @wait 0.5
@@ -43,7 +41,21 @@ Player.Smail: ……ぷっ、はは……！
 Friend.Angry: ちょっと！？笑うなって言ったでしょー！
 @endIf
 
-@hideChars
+@hideChars time:0.3 wait!
+; 黒い画面の間に直前の文章が表示されないようにする。
+@hidePrinter time:0 wait!
+
+; 背景を黒くする変更をブラインドで見せる。
+@trans Blinds time:1
+    @back id:Star tint:#000000
+
+; 黒い状態を少し維持する。
+@wait 0.3
+
+; 同じ背景を元の色へ戻す変更をブラインドで見せる。
+@trans Blinds time:1
+    @back id:Star tint:#FFFFFF
+
 夢で見た気がする会話をしながら帰り道を歩く。
 少し前を歩くように、\\nなるべく信号を渡らないように、\\n突然に事態に備えて周りをよく見て。
 挙動不審に見えたのか、{getname("friend")}に笑われてしまった。\\nだがそれでもいいのだ。
