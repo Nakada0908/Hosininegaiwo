@@ -556,7 +556,7 @@ GameObject:
   - component: {fileID: 683422940}
   - component: {fileID: 683422939}
   m_Layer: 0
-  m_Name: ESCGame
+  m_Name: ESCOpenGameSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

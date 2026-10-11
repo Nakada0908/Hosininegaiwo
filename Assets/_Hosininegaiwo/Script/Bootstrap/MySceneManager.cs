@@ -15,6 +15,8 @@ public class MySceneManager : MonoBehaviour
         "Bootstrap",
     };
 
+    private float defaultTimeScale = 1;
+    private float stopTimeScale = 0f;
     [SerializeField] private CanvasGroup fadeCanvas;
 
     private void Awake()
@@ -72,38 +74,56 @@ public class MySceneManager : MonoBehaviour
     private async UniTask InitializeRoutine(string firstSceneName)
     {
         isLoading = true;
+        try
+        {
+            Time.timeScale = stopTimeScale;
 
-        await SceneManager.LoadSceneAsync(firstSceneName, LoadSceneMode.Additive);
-        currentLoadScene = firstSceneName;
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentLoadScene));
+            await SceneManager.LoadSceneAsync(firstSceneName, LoadSceneMode.Additive);
+            currentLoadScene = firstSceneName;
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentLoadScene));
 
-        await FadeOut();
+            await FadeOut();
+        }
+        finally
+        { 
+            Time.timeScale = defaultTimeScale;
 
-        isLoading = false;
+            isLoading = false;
+        }
     }
 
     private async UniTask TransitionRoutine(string nextSceneName)
     {
         isLoading = true;
 
-        await FadeIn();
+        try
+        {
+            Time.timeScale = stopTimeScale;
 
-        string preSceneName = currentLoadScene;
+            await FadeIn();
 
-        //次のシーンを読み込み、完了を待つ
-        await SceneManager.LoadSceneAsync(nextSceneName, LoadSceneMode.Additive);
-        //新しいシーンをアクティブにする
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextSceneName));
-        //前のシーンをアンロードし、完了を待つ
-        await SceneManager.UnloadSceneAsync(preSceneName);
-        currentLoadScene = nextSceneName;
+            string preSceneName = currentLoadScene;
 
-        await FadeOut();
+            //次のシーンを読み込み、完了を待つ
+            await SceneManager.LoadSceneAsync(nextSceneName, LoadSceneMode.Additive);
+            //新しいシーンをアクティブにする
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextSceneName));
+            //前のシーンをアンロードし、完了を待つ
+            await SceneManager.UnloadSceneAsync(preSceneName);
+            currentLoadScene = nextSceneName;
 
-        isLoading = false;
+            await FadeOut();
+        }
+        finally
+        {
+
+            Time.timeScale = defaultTimeScale;
+
+            isLoading = false;
+        }
     }
 
-    private async UniTask FadeIn()
+    private async UniTask FadeIn()//表示する方
     {
         while (fadeCanvas.alpha < 1f)
         {
@@ -113,7 +133,7 @@ public class MySceneManager : MonoBehaviour
         }
     }
 
-    private async UniTask FadeOut()
+    private async UniTask FadeOut()//消す方
     {
         while (fadeCanvas.alpha > 0f)
         {

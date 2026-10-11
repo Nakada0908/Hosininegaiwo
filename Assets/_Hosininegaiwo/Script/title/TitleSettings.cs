@@ -8,11 +8,21 @@ public class TitleSettings : MonoBehaviour
     [SerializeField] private string nextSceneName;
     private bool startingGame;
 
-    private void Start()
+    private async void Start()
     {
         if (bgm != null)
         {
             SoundManager.Instance.PlayBGM(bgm);
+        }
+
+        //naninovelÇÃèâä˙âªÇë“Ç¬
+        try
+        {
+            await RuntimeInitializer.Initialize();
+        }
+        catch (Exception exception)
+        {
+            Debug.LogException(exception);
         }
     }
 
@@ -23,9 +33,6 @@ public class TitleSettings : MonoBehaviour
 
         try
         {
-            await RuntimeInitializer.Initialize();
-            if (!this || !isActiveAndEnabled) return;
-
             await Engine.GetServiceOrErr<IStateManager>().ResetState();
             if (!this || !isActiveAndEnabled) return;
 

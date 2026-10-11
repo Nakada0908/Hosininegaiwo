@@ -1,3 +1,5 @@
+using Naninovel;
+using Naninovel.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +10,18 @@ public class StarClicker : MonoBehaviour
     private void Update()
     {
         if (!Mouse.current.leftButton.wasPressedThisFrame) return;
+
+        //設定画面の表示中は星のクリック判定を行わない。
+        if (Engine.Initialized)
+        {
+            var uiManager = Engine.GetServiceOrErr<IUIManager>();
+            var settingsUI = uiManager.GetUI<ISettingsUI>();
+
+            if (settingsUI != null && settingsUI.Visible)
+            {
+                return;
+            }
+        }
 
         Vector2 mouse = Mouse.current.position.ReadValue();
 
