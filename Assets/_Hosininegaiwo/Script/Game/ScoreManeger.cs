@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
 
 public class ScoreManeger : MonoBehaviour
 {
@@ -29,4 +31,14 @@ public class ScoreManeger : MonoBehaviour
         score++;
         scoreText.text = score + "/10";
     }
+
+#if UNITY_EDITOR|| DEVELOPMENT_BUILD
+    private void Update()
+    {
+        if (Keyboard.current.numpad8Key.wasPressedThisFrame)
+        {
+            AddScore();
+        }
+    }
+#endif
 }
