@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ScriptPlayerConfiguration
   m_EditorClassIdentifier: Elringus.Naninovel.Runtime::Naninovel.ScriptPlayerConfiguration
   DefaultSkipMode: 0
-  SkipTimeScale: 10
+  SkipTimeScale: 1
   MinAutoPlayDelay: 1
   CompleteOnContinue: 1
   ShowDebugOnInit: 0
