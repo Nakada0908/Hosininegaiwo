@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using Cysharp.Threading.Tasks;
 
 public class DebugSceneChanger : MonoBehaviour
 {
@@ -26,12 +27,12 @@ public class DebugSceneChanger : MonoBehaviour
     {
         if (Keyboard.current.f1Key.wasPressedThisFrame)
         {
-            MySceneManager.Instance.ChangeScene("Title");
+            MySceneManager.Instance.ChangeScene("Title").Forget();
         }
 
         if (Keyboard.current.f12Key.wasPressedThisFrame)
         {
-            MySceneManager.Instance.ChangeScene("Ending");
+            MySceneManager.Instance.ChangeScene("Ending").Forget();
         }
     }
 }

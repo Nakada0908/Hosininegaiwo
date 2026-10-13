@@ -39,12 +39,16 @@ public class TitleSettings : MonoBehaviour
 
             NovelGameStarter.nextScript = null;
             GameRoundCounter.StartFirstGame();
-            MySceneManager.Instance.ChangeScene(nextSceneName);
+            //êÿÇËë÷Ç¶èIÇÌÇËÇ‹Ç≈ë“Ç¬
+            await MySceneManager.Instance.ChangeScene(nextSceneName);
         }
         catch (Exception exception)
         {
-            startingGame = false;
             Debug.LogException(exception);
+        }
+        finally
+        {
+            startingGame = false;
         }
     }
 }

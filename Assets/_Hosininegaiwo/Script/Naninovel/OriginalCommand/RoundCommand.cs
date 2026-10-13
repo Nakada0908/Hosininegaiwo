@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Threading.Tasks;
 using Naninovel;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public class RoundCommand : Command
     public override Awaitable Execute(ExecutionContext ctx)
     {
         GameRoundCounter.StartFirstGame();
-        MySceneManager.Instance.ChangeScene("Game");
+        MySceneManager.Instance.ChangeScene("Game").Forget();
         return Async.Completed;
     }
 }
@@ -19,7 +20,7 @@ public class SecondRoundCommand : Command
     public override Awaitable Execute(ExecutionContext ctx)
     {
         GameRoundCounter.StartSecondGame();
-        MySceneManager.Instance.ChangeScene("Game");
+        MySceneManager.Instance.ChangeScene("Game").Forget();
         return Async.Completed;
     }
 }

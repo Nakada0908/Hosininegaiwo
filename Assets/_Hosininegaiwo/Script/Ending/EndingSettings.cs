@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public class EndingSettings : MonoBehaviour
@@ -6,6 +7,6 @@ public class EndingSettings : MonoBehaviour
 
     public void OnClickReturnTitle()
     {
-        MySceneManager.Instance.ChangeScene(titleSceneName);
+        MySceneManager.Instance.ChangeScene(titleSceneName).Forget();
     }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using Naninovel;
+using Cysharp.Threading.Tasks;
 
 public class CreateStarManager : MonoBehaviour
 {
@@ -45,7 +46,7 @@ public class CreateStarManager : MonoBehaviour
 
                 //.naniw’è‚ğ•Ï‚¦‚Ä‚©‚çƒV[ƒ“‚ğ•Ï‚¦‚é
                 NovelGameStarter.nextScript = GameRoundCounter.isSecondRound ? finalStory : secondStory;
-                MySceneManager.Instance.ChangeScene("Novel");
+                MySceneManager.Instance.ChangeScene("Novel").Forget();
             }
         }
     }

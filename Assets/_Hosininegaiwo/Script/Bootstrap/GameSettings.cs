@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,7 +22,7 @@ public class GameSettings : MonoBehaviour
 
         if (activeSceneName == "Bootstrap")
         {
-            MySceneManager.Instance.InitializeGame("Title");
+            MySceneManager.Instance.InitializeGame("Title").Forget();
         }
 
         Destroy(gameObject);

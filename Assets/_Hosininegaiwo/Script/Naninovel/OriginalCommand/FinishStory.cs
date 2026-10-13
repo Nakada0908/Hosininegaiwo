@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Threading.Tasks;
 using Naninovel;
 using UnityEngine;
 
@@ -12,7 +13,7 @@ public sealed class FinishStory : Command
 {
     public override Awaitable Execute(ExecutionContext ctx)
     {
-        MySceneManager.Instance.ChangeScene("Ending");
+        MySceneManager.Instance.ChangeScene("Ending").Forget();
         return Async.Completed;
     }
 }

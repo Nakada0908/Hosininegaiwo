@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
-using Cysharp.Threading.Tasks.Triggers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -39,7 +38,7 @@ public class MySceneManager : MonoBehaviour
         }
     }
 
-    public void InitializeGame(string firstSceneName)
+    public async UniTask InitializeGame(string firstSceneName)
     {
         if (isLoading)
         {
@@ -51,10 +50,10 @@ public class MySceneManager : MonoBehaviour
             return;
         }
 
-        InitializeRoutine(firstSceneName).Forget(Debug.LogException);
+        await InitializeRoutine(firstSceneName);
     }
 
-    public void ChangeScene(string sceneName)
+    public async UniTask ChangeScene(string sceneName)
     {
         if (isLoading)
         {
@@ -66,7 +65,7 @@ public class MySceneManager : MonoBehaviour
             return;
         }
 
-        TransitionRoutine(sceneName).Forget(Debug.LogException);
+        await TransitionRoutine(sceneName);
     }
 
     private async UniTask InitializeRoutine(string firstSceneName)
