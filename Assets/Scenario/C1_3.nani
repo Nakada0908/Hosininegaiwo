@@ -14,7 +14,7 @@ Player.Smail: 綺麗だったね〜
 Friend.Smail: うん、すごく良かったぁ
 Friend: {getName("Player")}は何を願ったの？
 
-初めて見る流星群に目を奪われて、\\nそれをキラキラした目で見る{getname("friend")}にも見惚れて……\\n願い事をすることすら忘れていた。
+初めて見る流星群に目を奪われて、\\nそれをキラキラした目で見る{getname("friend")}にも<ruby="みほ">見惚</ruby>れて……\\n願い事をすることすら忘れていた。
 
 Player.Zitome: あ～そんなのあったね
 Friend.Gyagu_Gan: え～！何も願い事なく見てたの！？\\n確かに見てるだけでも良かったけどさ～
@@ -62,7 +62,7 @@ Player: （危な……）
 ; カメラIDにないからメモ帳から直打ち(´・ω・`)
 @shake Camera !wait count:3 time:0.1 hor! ver!
 @char Friend.Odoroku pos:150 easing:EaseOutQuad wait! time:0.1
-それは{getname("Friend")}を容赦なく弾き飛ばす。
+それは{getname("Friend")}を<ruby="ようしゃ">容赦</ruby>なく弾き飛ばす。
 少しも動かなくなった{getname("Friend")}の体を\\nただ見ているしかできない。
 あらぬ方向に曲がった足、腕、\\nそして……首。
 誰がどう見ても即死である。
