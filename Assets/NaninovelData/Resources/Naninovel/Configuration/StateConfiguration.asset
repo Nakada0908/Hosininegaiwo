@@ -25,7 +25,7 @@ MonoBehaviour:
   BinarySaveFiles: 1
   ResetOnGoto: 0
   ShowLoadingUI: 1
-  EnableStateRollback: 1
+  EnableStateRollback: 0
   StateRollbackSteps: 1024
   SavedRollbackSteps: 128
   RecoveryRollback: 1
