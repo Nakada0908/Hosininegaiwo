@@ -5,7 +5,12 @@ using UnityEngine.InputSystem;
 
 public class StarClicker : MonoBehaviour
 {
-    [SerializeField] private Camera gameCamera;
+    private Camera gameCamera;
+
+    private void Start()
+    {
+        gameCamera = Camera.main;
+    }
 
     private void Update()
     {

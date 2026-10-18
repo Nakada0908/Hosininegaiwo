@@ -7,8 +7,8 @@ public class CreateStarManager : MonoBehaviour
     [SerializeField] private GameObject firstStarPrefab;
     [SerializeField] private GameObject secondStarPrefab;
     [SerializeField] private GameObject secretStarPrefab;
-    [SerializeField] private Camera mainCamera;
     [SerializeField] private float spawnInterval = 1f;
+    private Camera mainCamera;
 
     [SerializeField, ScriptAssetRef] private string secondStory;
     [SerializeField, ScriptAssetRef] private string finalStory;
@@ -22,11 +22,12 @@ public class CreateStarManager : MonoBehaviour
     {
         isSceneChenge = false;
 
+        mainCamera = Camera.main;
+
         //ƒ‰ƒ“ƒ_ƒ€‚É¯‚ğ¶¬‚·‚é‚½‚ß‚Ì”z—ñ‚ğ‰Šú‰»
         randomStar = new bool[10];
         randomStar[Random.Range(0, randomStar.Length)] = true;
 
-        //‰‰ñ‚Ì¯¶¬
         CreateStar();
         //ˆê’èŠÔŠu‚Å¯‚ğ¶¬‚·‚é
         InvokeRepeating(nameof(CreateStar), spawnInterval, spawnInterval);

@@ -18,15 +18,6 @@ public class ESCOpenGameSettings : MonoBehaviour
         //naninovel‚ªESC‚Åİ’è‰æ–Ê‚È‚Ç‚ğ•Â‚¶‚é‚©‚çA‚Q‰ñ‚É•ª‚¯‚é‚±‚Æ‚Å‘Îˆ
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            var settingsUI = Engine.GetServiceOrErr<IUIManager>().GetUIOrErr<ISettingsUI>();
-            isSettingsOpen = !settingsUI.Visible;
-        }
-
-        if(Keyboard.current.escapeKey.wasReleasedThisFrame&&isSettingsOpen)
-        {
-            var settingsUI = Engine.GetServiceOrErr<IUIManager>().GetUIOrErr<ISettingsUI>();
-            settingsUI.Show();
-            isSettingsOpen = false;
         }
     }
 }
