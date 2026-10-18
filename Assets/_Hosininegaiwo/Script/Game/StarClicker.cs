@@ -15,6 +15,7 @@ public class StarClicker : MonoBehaviour
     private void Update()
     {
         if (!Mouse.current.leftButton.wasPressedThisFrame) return;
+        if(MySceneManager.Instance.isGamePause) return;   
 
         //設定画面の表示中は星のクリック判定を行わない。
         if (Engine.Initialized)

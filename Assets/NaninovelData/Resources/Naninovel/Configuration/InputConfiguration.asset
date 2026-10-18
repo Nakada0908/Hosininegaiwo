@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Elringus.Naninovel.Runtime::Naninovel.InputConfiguration
   SpawnEventSystem: 0
   EventSystem: {fileID: 0}
-  InputActions: {fileID: 0}
+  InputActions: {fileID: -944628639613478452, guid: f86d1fa87ac3e234faf4b183cc26d68c, type: 3}
   ActionMaps:
   - Naninovel
   DetectInputMode: 1

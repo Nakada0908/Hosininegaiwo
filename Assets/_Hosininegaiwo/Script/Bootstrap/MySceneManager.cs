@@ -2,6 +2,8 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Naninovel;
+using Naninovel.UI;
 
 public class MySceneManager : MonoBehaviour
 {
@@ -17,6 +19,9 @@ public class MySceneManager : MonoBehaviour
     private float defaultTimeScale = 1;
     private float stopTimeScale = 0f;
     [SerializeField] private CanvasGroup fadeCanvas;
+
+    //ポーズ中かどうかを判定するプロパティ
+    public bool isGamePause { get; private set; }
 
     private void Awake()
     {
@@ -74,7 +79,7 @@ public class MySceneManager : MonoBehaviour
 
         try
         {
-            Time.timeScale = stopTimeScale;
+            ChangeTimeScale();
 
             await SceneManager.LoadSceneAsync(firstSceneName, LoadSceneMode.Additive);
             currentLoadScene = firstSceneName;
@@ -83,10 +88,10 @@ public class MySceneManager : MonoBehaviour
             await FadeOut();
         }
         finally
-        { 
-            Time.timeScale = defaultTimeScale;
-
+        {
             isLoading = false;
+
+            ChangeTimeScale();
         }
     }
 
@@ -96,7 +101,7 @@ public class MySceneManager : MonoBehaviour
 
         try
         {
-            Time.timeScale = stopTimeScale;
+            ChangeTimeScale();
 
             await FadeIn();
 
@@ -114,11 +119,24 @@ public class MySceneManager : MonoBehaviour
         }
         finally
         {
-
-            Time.timeScale = defaultTimeScale;
-
             isLoading = false;
+
+            ChangeTimeScale();
         }
+    }
+
+    //ゲーム側から呼び出すことで、ゲームのポーズ状態を切り替える
+    public void SetGamePause(bool paused)
+    {
+        isGamePause = paused;
+        ChangeTimeScale();
+    }
+
+    private void ChangeTimeScale()
+    {
+        Time.timeScale = (isGamePause||isLoading) 
+            ? stopTimeScale 
+            : defaultTimeScale;
     }
 
     private async UniTask FadeIn()//表示する方

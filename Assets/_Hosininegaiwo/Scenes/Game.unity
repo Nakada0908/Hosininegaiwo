@@ -253,8 +253,53 @@ Transform:
   - {fileID: 1401145592}
   - {fileID: 1263379095}
   - {fileID: 1742055805}
+  - {fileID: 1254389488}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1254389487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1254389488}
+  - component: {fileID: 1254389489}
+  m_Layer: 0
+  m_Name: 'GamePauseController '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1254389488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254389487}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -125.990234, y: 98.20172, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1237883328}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1254389489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254389487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875adf4b809264b47af15aa35652cb24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GamePauseController
 --- !u!1 &1263379093
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +332,6 @@ MonoBehaviour:
   firstStarPrefab: {fileID: 5627402743625057780, guid: 0d583925323d652478974ca1bf5b93bb, type: 3}
   secondStarPrefab: {fileID: 5627402743625057780, guid: 6055bb5dca718c742af7f8935da453ed, type: 3}
   secretStarPrefab: {fileID: 5627402743625057780, guid: 2372c14c15dc208469b2a231ca2a3b80, type: 3}
-  mainCamera: {fileID: 0}
   spawnInterval: 1
   secondStory: 2e4aa66a3f31b574b94bc88799964314
   finalStory: 939499e392a89f945b4d4ac868ec2e89
@@ -486,7 +530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc0b5d75ac295342b5bc7426f2495e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StarClicker
-  gameCamera: {fileID: 0}
 --- !u!1 &1954917263
 GameObject:
   m_ObjectHideFlags: 0
